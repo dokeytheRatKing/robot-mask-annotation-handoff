@@ -1,0 +1,29 @@
+{
+  "sample_id": "episode_002478_left_wrist_000430",
+  "episode_id": "episode_002478",
+  "camera": "left_wrist",
+  "frame_idx": 430,
+  "object_id": 20,
+  "instance_id": "watermelon_slice_1",
+  "visibility": "partial_occlusion",
+  "conditions": [
+    "grasp_contact",
+    "partial_occlusion"
+  ],
+  "mask": {
+    "format": "coco_rle",
+    "size": [
+      360,
+      640
+    ],
+    "counts": "SjY31l:<D;F:F:M3N2N2M3N2M3N2N2M3N2M3N2N2M3N2N2M3N2M3N2N2M3O1N2N2N2N2O1N2N2N2N2O1N2N2N2N2O1N3M2N2N2O1N2N2O1N2O1N2O1N2O1N2O1N2O1N2N2N2O1N2N2N2O10000O10000001O2N2N2N1O2YMoI3S6_OgJ3[5IVKcNfNa0U6k0jKTOX4j0jKTOY4i0iKUO]4d0eK[Oa4?aK_O`4`0bK^O`4`0bK^O`4`0aK_O`4?cK_O_4?cK_O_4?cK_O^4`0cK_O_4?cK_O_4>dK@]4?eK_O]4?dK@_4=\\3J6Id]c2"
+  },
+  "annotator": "Simon",
+  "human_confirmed": true,
+  "annotation_method": "manual_pixel_editor",
+  "prediction_prefill": false,
+  "source_image_sha256": "5d9a43ea42d53842f505946ef1e2cb43cc214de55e9ab589bd4b5d0a20e98025",
+  "notes": "",
+  "saved_utc": "2026-09-16T11:35:30.799458+00:00",
+  "revision": 1
+}

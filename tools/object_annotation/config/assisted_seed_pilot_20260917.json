@@ -1,0 +1,26 @@
+{
+  "schema": "astribot.assisted_seed_pilot.v1",
+  "purpose": "Three difficult existing clips, sparse reviewed masks; all seed frames excluded from scoring",
+  "model_config": "configs/sam2.1/sam2.1_hiera_b+.yaml",
+  "checkpoint": "models/sam2/sam2.1_hiera_base_plus.pt",
+  "clips": [
+    {
+      "clip_id": "episode_002478_head_000850",
+      "seed_ui_indices": [61, 76],
+      "visually_absent_object_ids": [],
+      "visual_review": "Avocado moves from gripper into basket; two seeds bracket contact and release. All five task objects visible."
+    },
+    {
+      "clip_id": "episode_002478_left_wrist_000420",
+      "seed_ui_indices": [143, 153],
+      "visually_absent_object_ids": [2, 10, 21],
+      "visual_review": "Held watermelon and basket at right edge; basket exits as wrist tilts. Banana, peach and avocado have no visible surfaces throughout this short clip."
+    },
+    {
+      "clip_id": "episode_002478_right_wrist_000470",
+      "seed_ui_indices": [242, 254],
+      "visually_absent_object_ids": [],
+      "visual_review": "Watermelon moves from opposite gripper into basket. Other objects remain on the table; preserve their identities despite arm occlusion."
+    }
+  ]
+}

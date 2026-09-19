@@ -1,0 +1,12 @@
+{
+  "case_id":"right_banana_occlusion",
+  "object_id":2,
+  "human_confirmed":false,
+  "reviewer":"active_session_assistant",
+  "reviewed_original_frames":[645,700,782,784,786,790],
+  "overrides":[
+    {"start":645,"end":649,"decision":"not_visible_at_anchor","note":"Banana is hidden by robot at645. Extend UNKNOWN to join existing650:709 clear; no pixel mask is invented."},
+    {"start":784,"end":790,"decision":"uncertain_at_anchor","note":"At784 the remaining possible sliver is too small/blurred for a reliable mask; at790 banana is hidden. Preserve UNKNOWN, not confirmed absence."}
+  ],
+  "policy":"Only these target rows change. Original r1 retained. This is assisted conservative abstention, not automatic identity recovery or exact temporal GT."
+}

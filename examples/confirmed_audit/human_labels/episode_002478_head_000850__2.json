@@ -1,0 +1,28 @@
+{
+  "sample_id": "episode_002478_head_000850",
+  "episode_id": "episode_002478",
+  "camera": "head",
+  "frame_idx": 850,
+  "object_id": 2,
+  "instance_id": "banana_1",
+  "visibility": "visible",
+  "conditions": [
+    "normal_unoccluded"
+  ],
+  "mask": {
+    "format": "coco_rle",
+    "size": [
+      720,
+      1280
+    ],
+    "counts": "Pif4;Uf0:E;F:E4M2M2O2M2N3N1N2O2M2O2M2O2M201N1O1O2O0O2N100O1O1O100O1O1O1002O2M4L3M3M4L3M3M3M4L2N0000O2O000000O010O100O10O0100O100O010O100O10O0100O100O00100O1O1O001O1O1O1O001O1O1O1O001O001O001N101N101O0O2O0O2O000O2O001N101N101O0O2O0O2O000O2O00000000000000000000000000000O1O1N2O1O1O1N2O1OXfZd0"
+  },
+  "annotator": "Simon",
+  "human_confirmed": true,
+  "annotation_method": "manual_pixel_editor",
+  "prediction_prefill": false,
+  "source_image_sha256": "4143bee7032decef3bc83d4749a418cb962230e1d5317c383adbcdd0a51df8d5",
+  "notes": "",
+  "saved_utc": "2026-09-16T11:20:17.141815+00:00",
+  "revision": 1
+}

@@ -1,0 +1,116 @@
+{
+  "schema": "astribot.human_mask_audit.v1",
+  "samples": [
+    {
+      "sample_id": "episode_002478_head_000850",
+      "clip_id": "episode_002478_head_000850",
+      "episode_id": "episode_002478",
+      "task_id": 24,
+      "camera": "head",
+      "frame_idx": 850,
+      "timestamp": 1785314983.622556,
+      "image": "images/episode_002478_head_000850.png",
+      "image_sha256": "4143bee7032decef3bc83d4749a418cb962230e1d5317c383adbcdd0a51df8d5",
+      "image_width": 1280,
+      "image_height": 720,
+      "objects": [
+        {
+          "object_id": 2,
+          "class_name": "banana"
+        },
+        {
+          "object_id": 4,
+          "class_name": "basket"
+        },
+        {
+          "object_id": 10,
+          "class_name": "peach"
+        },
+        {
+          "object_id": 20,
+          "class_name": "watermelon slice"
+        },
+        {
+          "object_id": 21,
+          "class_name": "avocado"
+        }
+      ],
+      "annotation_status": "PENDING_HUMAN",
+      "split": "diagnostic_audit_not_independent_test"
+    },
+    {
+      "sample_id": "episode_002478_left_wrist_000430",
+      "clip_id": "episode_002478_left_wrist_000420",
+      "episode_id": "episode_002478",
+      "task_id": 24,
+      "camera": "left_wrist",
+      "frame_idx": 430,
+      "timestamp": 1785314976.6589308,
+      "image": "images/episode_002478_left_wrist_000430.png",
+      "image_sha256": "5d9a43ea42d53842f505946ef1e2cb43cc214de55e9ab589bd4b5d0a20e98025",
+      "image_width": 640,
+      "image_height": 360,
+      "objects": [
+        {
+          "object_id": 2,
+          "class_name": "banana"
+        },
+        {
+          "object_id": 4,
+          "class_name": "basket"
+        },
+        {
+          "object_id": 10,
+          "class_name": "peach"
+        },
+        {
+          "object_id": 20,
+          "class_name": "watermelon slice"
+        },
+        {
+          "object_id": 21,
+          "class_name": "avocado"
+        }
+      ],
+      "annotation_status": "PENDING_HUMAN",
+      "split": "diagnostic_audit_not_independent_test"
+    },
+    {
+      "sample_id": "episode_002478_right_wrist_000475",
+      "clip_id": "episode_002478_right_wrist_000470",
+      "episode_id": "episode_002478",
+      "task_id": 24,
+      "camera": "right_wrist",
+      "frame_idx": 475,
+      "timestamp": 1785314977.3740509,
+      "image": "images/episode_002478_right_wrist_000475.png",
+      "image_sha256": "271cea06cb6fe6345fb68fd37f5a89bc0a357978fe8905178a1d328cc17f6312",
+      "image_width": 640,
+      "image_height": 360,
+      "objects": [
+        {
+          "object_id": 2,
+          "class_name": "banana"
+        },
+        {
+          "object_id": 4,
+          "class_name": "basket"
+        },
+        {
+          "object_id": 10,
+          "class_name": "peach"
+        },
+        {
+          "object_id": 20,
+          "class_name": "watermelon slice"
+        },
+        {
+          "object_id": 21,
+          "class_name": "avocado"
+        }
+      ],
+      "annotation_status": "PENDING_HUMAN",
+      "split": "diagnostic_audit_not_independent_test"
+    }
+  ]
+}

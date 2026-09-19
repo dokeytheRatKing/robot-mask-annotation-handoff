@@ -1,0 +1,28 @@
+{
+  "sample_id": "episode_002478_left_wrist_000430",
+  "episode_id": "episode_002478",
+  "camera": "left_wrist",
+  "frame_idx": 430,
+  "object_id": 4,
+  "instance_id": "basket_1",
+  "visibility": "partial_occlusion",
+  "conditions": [
+    "partial_occlusion"
+  ],
+  "mask": {
+    "format": "coco_rle",
+    "size": [
+      360,
+      640
+    ],
+    "counts": "[Qg49n:6K5J6K2M2O0O2O0O2O0O10O0100O01000O010O108G4M0O101N100O101N100O101N100O2O0O<E1O1N2O3L5L0O100O2O0O100OO2N2N101000O10O010000O10O10O10000O10001N2O0O2O1O1N101O1N101O1N2O001N2O001N2O1N101O1N101O2M2O2N2M2O2N2M3N1O2M3N1O1N10000O1000000O10000O10000O10000O10000O10001N101O1N101O001N2O001N101O1N101O0O2O001N2O001N101O1N101O001N2O001N101O1N101O0O2O001O1N101O0O2O1O0O2O001O1N101O0O2O001O1N101O000000000000001O0000000000000000010U4jKT2"
+  },
+  "annotator": "Simon",
+  "human_confirmed": true,
+  "annotation_method": "manual_pixel_editor",
+  "prediction_prefill": false,
+  "source_image_sha256": "5d9a43ea42d53842f505946ef1e2cb43cc214de55e9ab589bd4b5d0a20e98025",
+  "notes": "",
+  "saved_utc": "2026-09-16T11:36:23.750515+00:00",
+  "revision": 1
+}

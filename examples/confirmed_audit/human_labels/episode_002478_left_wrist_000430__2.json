@@ -1,0 +1,42 @@
+{
+  "sample_id": "episode_002478_left_wrist_000430",
+  "episode_id": "episode_002478",
+  "camera": "left_wrist",
+  "frame_idx": 430,
+  "object_id": 2,
+  "instance_id": "banana_1",
+  "visibility": "out_of_view",
+  "conditions": [
+    "out_of_view"
+  ],
+  "mask": {
+    "format": "coco_rle",
+    "size": [
+      360,
+      640
+    ],
+    "counts": "PPQ7"
+  },
+  "annotator": "Simon",
+  "human_confirmed": true,
+  "annotation_method": "manual_pixel_editor",
+  "prediction_prefill": true,
+  "source_image_sha256": "5d9a43ea42d53842f505946ef1e2cb43cc214de55e9ab589bd4b5d0a20e98025",
+  "notes": "用户已逐项审阅并在对话中确认全部无问题；Codex 按用户指示代录确认。",
+  "saved_utc": "2026-09-16T15:10:52.403024+00:00",
+  "proposal_provenance": {
+    "model": "SAM 2.1 Hiera Small",
+    "checkpoint_sha256": null,
+    "seed": 20260916,
+    "device": "mps",
+    "clip_id": "episode_002478_left_wrist_000420",
+    "human_seed_count": 0,
+    "visual_prompt_count": 0,
+    "prediction_metadata": null,
+    "refinement_prompt": null,
+    "scene_decisions_sha256": "943ea2c34a77870a0c3f289a978d3ab55ab613fed2ec5c563bd89c0a2a060ae1",
+    "annotation_method": "visual_sequence_review_empty",
+    "proposal_id": "sam21-20260916-episode_002478_left_wrist_000430-2"
+  },
+  "revision": 1
+}

@@ -1,0 +1,1431 @@
+{
+  "schema": "mask_handoff.source_snapshot.v1",
+  "date": "2026-09-19",
+  "sources": [
+    {
+      "source": "tools/object_annotation/MASKS.md",
+      "target": "tools/object_annotation/MASKS.md",
+      "source_sha256": "b9b5f52c3954f46f82219543a734a91e7dbe093a5f0e4a7a679711200992bc1f",
+      "exported_sha256": "896dbd622def3e00f17f60f52ac6def2281ab3d887e8917714c9c977992a4e44",
+      "transformation": "redact original workspace/env/host strings"
+    },
+    {
+      "source": "tools/object_annotation/PORTABLE_AUDIT_README.md",
+      "target": "tools/object_annotation/PORTABLE_AUDIT_README.md",
+      "source_sha256": "dfed0a9238c42531ddc61f4fd32222cf4d0f6eb83a9f6362453044d024098be5",
+      "exported_sha256": "71e344d55d12cd5e0ab781167859932b86adceed63092a1af657100801209b7a",
+      "transformation": "redact original workspace/env/host strings"
+    },
+    {
+      "source": "tools/object_annotation/QUALITY_RECOVERY.md",
+      "target": "tools/object_annotation/QUALITY_RECOVERY.md",
+      "source_sha256": "4e7923dc3968135998d83d9b550f8a1681111d05f9ed862420e05ae689cfd342",
+      "exported_sha256": "22cb59d2db8659ee372a4847d2ba64f4d4ad0a1357c4d47c02b159894ca510eb",
+      "transformation": "redact original workspace/env/host strings"
+    },
+    {
+      "source": "tools/object_annotation/README.md",
+      "target": "tools/object_annotation/README.md",
+      "source_sha256": "aff9ea72a36cc07332eb9b29d9b17852586c5a87bdc94d585446fd1ea6d38a82",
+      "exported_sha256": "0525ac541da17646bbb584ada72141ad2a9847d2d139d408275256bbb3291c1a",
+      "transformation": "redact original workspace/env/host strings"
+    },
+    {
+      "source": "tools/object_annotation/SEED_BANK.md",
+      "target": "tools/object_annotation/SEED_BANK.md",
+      "source_sha256": "8d4d617909c34ec8453bf7b5fa59b67fde9a740a3125ca3f461910b85c8e0bb5",
+      "exported_sha256": "2b97035290fda072314afd8451c5c8cfde5d10cacf90e8f9d912987659f9f30c",
+      "transformation": "redact original workspace/env/host strings"
+    },
+    {
+      "source": "tools/object_annotation/annotate.py",
+      "target": "tools/object_annotation/annotate.py",
+      "source_sha256": "2068ca4eeab5bc171064f20ac4936d077445f3b42c992f916c56b116802407da",
+      "exported_sha256": "2068ca4eeab5bc171064f20ac4936d077445f3b42c992f916c56b116802407da",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/archive_cal64_incomplete.py",
+      "target": "tools/object_annotation/archive_cal64_incomplete.py",
+      "source_sha256": "28ea0dcc7d4bde7c2afec62fcec4a88f749533feb31cabc9ce9df0d179d53417",
+      "exported_sha256": "28ea0dcc7d4bde7c2afec62fcec4a88f749533feb31cabc9ce9df0d179d53417",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/assisted_seed_pilot.py",
+      "target": "tools/object_annotation/assisted_seed_pilot.py",
+      "source_sha256": "ad0b089b79940861f19af1ff732b386ea60a80e50ac41d14314fd00c018e7857",
+      "exported_sha256": "ad0b089b79940861f19af1ff732b386ea60a80e50ac41d14314fd00c018e7857",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/audit_masks.py",
+      "target": "tools/object_annotation/audit_masks.py",
+      "source_sha256": "60b0fafd886ae93b502147d1c469700882aa46826bcacdaa2195dae9d159c30b",
+      "exported_sha256": "60b0fafd886ae93b502147d1c469700882aa46826bcacdaa2195dae9d159c30b",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/audit_rle.py",
+      "target": "tools/object_annotation/audit_rle.py",
+      "source_sha256": "d688a320f0b47b5e642a1f5626e91eaf46df7f05fcbd2bba7a42e94423adcd38",
+      "exported_sha256": "d688a320f0b47b5e642a1f5626e91eaf46df7f05fcbd2bba7a42e94423adcd38",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/audit_server.py",
+      "target": "tools/object_annotation/audit_server.py",
+      "source_sha256": "6547777bdfb88aa3bca55fece0c9e0f07273444d0f3cafdc9c4d9cbc8d28b6d3",
+      "exported_sha256": "6547777bdfb88aa3bca55fece0c9e0f07273444d0f3cafdc9c4d9cbc8d28b6d3",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/audit_ui.html",
+      "target": "tools/object_annotation/audit_ui.html",
+      "source_sha256": "1db8a4f8950144676b3a2f80a96bed118572036a018eae6d267f504c37cac2be",
+      "exported_sha256": "1db8a4f8950144676b3a2f80a96bed118572036a018eae6d267f504c37cac2be",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/build_assisted_review_pack.py",
+      "target": "tools/object_annotation/build_assisted_review_pack.py",
+      "source_sha256": "709e5a169c612dea441c20f0faa4f130f8d5e646e5556ea0a55f510ae9756e48",
+      "exported_sha256": "709e5a169c612dea441c20f0faa4f130f8d5e646e5556ea0a55f510ae9756e48",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/build_calibration64_review.py",
+      "target": "tools/object_annotation/build_calibration64_review.py",
+      "source_sha256": "08e31351cf7ff275b03cbf86dea8138743497132cafbc474313f97da87a867cf",
+      "exported_sha256": "08e31351cf7ff275b03cbf86dea8138743497132cafbc474313f97da87a867cf",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/build_gallery.py",
+      "target": "tools/object_annotation/build_gallery.py",
+      "source_sha256": "02d60f54caa31796e49614dacedb71a219b02bc99da0b7c28ec193af1567b106",
+      "exported_sha256": "02d60f54caa31796e49614dacedb71a219b02bc99da0b7c28ec193af1567b106",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/build_mask_audit.py",
+      "target": "tools/object_annotation/build_mask_audit.py",
+      "source_sha256": "af9f37d4a5d50bcb3b08ffe3c7df4a79eaabd68f4fe03fbf9c9bdaea3a081e62",
+      "exported_sha256": "af9f37d4a5d50bcb3b08ffe3c7df4a79eaabd68f4fe03fbf9c9bdaea3a081e62",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/build_portable_audit.py",
+      "target": "tools/object_annotation/build_portable_audit.py",
+      "source_sha256": "b5b12aeee4ddf301ee8da864377d973aca31e6a9eca02459f943be5c4f002068",
+      "exported_sha256": "b5b12aeee4ddf301ee8da864377d973aca31e6a9eca02459f943be5c4f002068",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/calibration64.py",
+      "target": "tools/object_annotation/calibration64.py",
+      "source_sha256": "7d0504fa99befb4fc2f11fa99fa18cad9db906183e859f2cdbbb59abeb4f97e5",
+      "exported_sha256": "7d0504fa99befb4fc2f11fa99fa18cad9db906183e859f2cdbbb59abeb4f97e5",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/calibration64_mask_adapter.py",
+      "target": "tools/object_annotation/calibration64_mask_adapter.py",
+      "source_sha256": "ac0ec73d0a71cee288579f5e337324e38555abba2784535cdb95ed146bbc2f99",
+      "exported_sha256": "ac0ec73d0a71cee288579f5e337324e38555abba2784535cdb95ed146bbc2f99",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/calibration64_release.py",
+      "target": "tools/object_annotation/calibration64_release.py",
+      "source_sha256": "2f5bb63a4495d5fc9f3d2bc0ab6569906935efc3af0799c1944d8123e60fda28",
+      "exported_sha256": "2f5bb63a4495d5fc9f3d2bc0ab6569906935efc3af0799c1944d8123e60fda28",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/check_assisted_review_pack.py",
+      "target": "tools/object_annotation/check_assisted_review_pack.py",
+      "source_sha256": "05379be119fa02efec3a2063ce63600fa16a680d612296a7c746ba2b607df0dc",
+      "exported_sha256": "05379be119fa02efec3a2063ce63600fa16a680d612296a7c746ba2b607df0dc",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/check_confirmed_review_ui.py",
+      "target": "tools/object_annotation/check_confirmed_review_ui.py",
+      "source_sha256": "4423188d461903ee6cdafb7465e35cacd22945f414afc8fe70061361d5f8e72a",
+      "exported_sha256": "4423188d461903ee6cdafb7465e35cacd22945f414afc8fe70061361d5f8e72a",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/check_portable_bundle.py",
+      "target": "tools/object_annotation/check_portable_bundle.py",
+      "source_sha256": "1deea98eb33769e48cc33878385e896237ee8a7dc174cd619e3178eb89107bdb",
+      "exported_sha256": "1deea98eb33769e48cc33878385e896237ee8a7dc174cd619e3178eb89107bdb",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/check_seed_bank_review.py",
+      "target": "tools/object_annotation/check_seed_bank_review.py",
+      "source_sha256": "7e3d49b1c890aa6b3831253152622e408d76597a85f7e2e55f975a7908672eb7",
+      "exported_sha256": "7e3d49b1c890aa6b3831253152622e408d76597a85f7e2e55f975a7908672eb7",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/compare_sam2.py",
+      "target": "tools/object_annotation/compare_sam2.py",
+      "source_sha256": "11d2df6f689adcbbd879ba3d5e1e5b7b2e8c8ffb9687bcaef3fa72a25ddb73e5",
+      "exported_sha256": "11d2df6f689adcbbd879ba3d5e1e5b7b2e8c8ffb9687bcaef3fa72a25ddb73e5",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/config/admission_assistant_prompts_20260918.json",
+      "target": "tools/object_annotation/config/admission_assistant_prompts_20260918.json",
+      "source_sha256": "c2cdf70314aa7be1ccefffd21c3d02e5ea9a2519df886983e9357a8fb37f3cd3",
+      "exported_sha256": "c2cdf70314aa7be1ccefffd21c3d02e5ea9a2519df886983e9357a8fb37f3cd3",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/config/admission_assistant_prompts_20260918_r2.json",
+      "target": "tools/object_annotation/config/admission_assistant_prompts_20260918_r2.json",
+      "source_sha256": "5fab1a23d63dad2fa8ef0d274991b720b2ccc6fbc810126451fbdf88d09c9187",
+      "exported_sha256": "5fab1a23d63dad2fa8ef0d274991b720b2ccc6fbc810126451fbdf88d09c9187",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/config/appearance_seeds.json",
+      "target": "tools/object_annotation/config/appearance_seeds.json",
+      "source_sha256": "3b5a76e9e41c19f26966812d6c98170a89e3c5b0294bf75498a60cedad2f530b",
+      "exported_sha256": "3b5a76e9e41c19f26966812d6c98170a89e3c5b0294bf75498a60cedad2f530b",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/config/assisted_seed_pilot_20260917.json",
+      "target": "tools/object_annotation/config/assisted_seed_pilot_20260917.json",
+      "source_sha256": "f35817e675672fa709bf6b14c3af48fb9b5776255f8a70f61bcf148757a1820a",
+      "exported_sha256": "f35817e675672fa709bf6b14c3af48fb9b5776255f8a70f61bcf148757a1820a",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/config/batch01_right_wrist_reseed_20260918.json",
+      "target": "tools/object_annotation/config/batch01_right_wrist_reseed_20260918.json",
+      "source_sha256": "92aeb256f4378974d3d89d4a3f587353630d0bd2f3d8d7b280b027d25970a559",
+      "exported_sha256": "92aeb256f4378974d3d89d4a3f587353630d0bd2f3d8d7b280b027d25970a559",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/config/calibration64_repairs.json",
+      "target": "tools/object_annotation/config/calibration64_repairs.json",
+      "source_sha256": "52e8f5899b542e5e9f5b86552b6d040ed6ca63a27f3e9e69767e002f0933fba2",
+      "exported_sha256": "52e8f5899b542e5e9f5b86552b6d040ed6ca63a27f3e9e69767e002f0933fba2",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/config/full_reentry_assistant_20260918.json",
+      "target": "tools/object_annotation/config/full_reentry_assistant_20260918.json",
+      "source_sha256": "1ba26751f96fe087add179ae46317ccfd9218465c8c4ac8397c757a272b2f458",
+      "exported_sha256": "1ba26751f96fe087add179ae46317ccfd9218465c8c4ac8397c757a272b2f458",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/config/multitask_canary_repair.json",
+      "target": "tools/object_annotation/config/multitask_canary_repair.json",
+      "source_sha256": "943b31c0202a585c2b27a1cbc8b435167d7566c2ccfbe3dd42fa5cc1f8bbad22",
+      "exported_sha256": "943b31c0202a585c2b27a1cbc8b435167d7566c2ccfbe3dd42fa5cc1f8bbad22",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/config/multitask_reseed_canary_prompts.json",
+      "target": "tools/object_annotation/config/multitask_reseed_canary_prompts.json",
+      "source_sha256": "24b369af215c5cddd4993d825a737d00fc4be237949806a889a6734035a6d3d0",
+      "exported_sha256": "24b369af215c5cddd4993d825a737d00fc4be237949806a889a6734035a6d3d0",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/config/objects.json",
+      "target": "tools/object_annotation/config/objects.json",
+      "source_sha256": "eaad7e2613e39287a47bfb94063e0ac4c8db100499d1fccc62d08d19dfeda63e",
+      "exported_sha256": "eaad7e2613e39287a47bfb94063e0ac4c8db100499d1fccc62d08d19dfeda63e",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/config/prompt_overrides_visual_v2.json",
+      "target": "tools/object_annotation/config/prompt_overrides_visual_v2.json",
+      "source_sha256": "2cd9a31c799c1db2fb84384925b0a1623435c28eae380572b6910063ec439ab8",
+      "exported_sha256": "2cd9a31c799c1db2fb84384925b0a1623435c28eae380572b6910063ec439ab8",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/config/robot_mask_prompts_pilot.json",
+      "target": "tools/object_annotation/config/robot_mask_prompts_pilot.json",
+      "source_sha256": "e1fc07c9b55c1413dda383d82372d64c82e2b53ada4dd021e1e5ed684f548f07",
+      "exported_sha256": "e1fc07c9b55c1413dda383d82372d64c82e2b53ada4dd021e1e5ed684f548f07",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/config/robot_objects.json",
+      "target": "tools/object_annotation/config/robot_objects.json",
+      "source_sha256": "a34cf4c75259de3f7237c6113ebb7404392c4808682ffa50d12273b7bb7eea6e",
+      "exported_sha256": "a34cf4c75259de3f7237c6113ebb7404392c4808682ffa50d12273b7bb7eea6e",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/config/robot_parts.json",
+      "target": "tools/object_annotation/config/robot_parts.json",
+      "source_sha256": "06383bfd755302092219af003ea751d91fbd3888d0358cf2cc7566f94ca75d0e",
+      "exported_sha256": "06383bfd755302092219af003ea751d91fbd3888d0358cf2cc7566f94ca75d0e",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/config/sam2_pilot_seed_review.json",
+      "target": "tools/object_annotation/config/sam2_pilot_seed_review.json",
+      "source_sha256": "d0277c180c12a2aadd45c0852514b4778e920fd6f4bf49b47c89bf8d2f806c4a",
+      "exported_sha256": "d0277c180c12a2aadd45c0852514b4778e920fd6f4bf49b47c89bf8d2f806c4a",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/config/seed_bank_visual_review_20260918.json",
+      "target": "tools/object_annotation/config/seed_bank_visual_review_20260918.json",
+      "source_sha256": "a5cbfcfad198cb84c0c97d14e9773c24885158d397f7dc576d60f1d94413ef93",
+      "exported_sha256": "a5cbfcfad198cb84c0c97d14e9773c24885158d397f7dc576d60f1d94413ef93",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/config/semantic_boundary_review_20260918.json",
+      "target": "tools/object_annotation/config/semantic_boundary_review_20260918.json",
+      "source_sha256": "5dd8da3f0c2ec19c5e83021d22bb2bf58fe7bd5ed8944738721131869c8009b7",
+      "exported_sha256": "5dd8da3f0c2ec19c5e83021d22bb2bf58fe7bd5ed8944738721131869c8009b7",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/config/semantic_interval_repair_20260918.json",
+      "target": "tools/object_annotation/config/semantic_interval_repair_20260918.json",
+      "source_sha256": "257463c90272e3eefc3d6bdbf78e47cd46279959e8e3f9678e0ec427418894b2",
+      "exported_sha256": "257463c90272e3eefc3d6bdbf78e47cd46279959e8e3f9678e0ec427418894b2",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/config/task_objects.json",
+      "target": "tools/object_annotation/config/task_objects.json",
+      "source_sha256": "743bfcf5b4143bda4d965c79730c7de9e72e8b488f9f6105bf481086a7b1e6cc",
+      "exported_sha256": "743bfcf5b4143bda4d965c79730c7de9e72e8b488f9f6105bf481086a7b1e6cc",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/curate_seed_bank.py",
+      "target": "tools/object_annotation/curate_seed_bank.py",
+      "source_sha256": "6e13542e3b2224c6819fe19decc2a7a510a541d21a79932be8da5b946bf9f37a",
+      "exported_sha256": "6e13542e3b2224c6819fe19decc2a7a510a541d21a79932be8da5b946bf9f37a",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/data.py",
+      "target": "tools/object_annotation/data.py",
+      "source_sha256": "17a8a9369b3366474db08274a0295c5b9098bbe81dadeaaeb27a1464bc87599d",
+      "exported_sha256": "17a8a9369b3366474db08274a0295c5b9098bbe81dadeaaeb27a1464bc87599d",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/detector.py",
+      "target": "tools/object_annotation/detector.py",
+      "source_sha256": "efb82b1b1be4953a30a60a5c6923c266a6e35a68b88c8081862d6f260e686249",
+      "exported_sha256": "efb82b1b1be4953a30a60a5c6923c266a6e35a68b88c8081862d6f260e686249",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/diagnose_recovery_candidates.py",
+      "target": "tools/object_annotation/diagnose_recovery_candidates.py",
+      "source_sha256": "67b581984a109b0c0d80bc9b4ba27283cd4543e8c7094d887c6cd1acf3e54fb9",
+      "exported_sha256": "67b581984a109b0c0d80bc9b4ba27283cd4543e8c7094d887c6cd1acf3e54fb9",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/diagnostics.py",
+      "target": "tools/object_annotation/diagnostics.py",
+      "source_sha256": "0b3a6ecb0df558fc9357ed65de03b99fa999194ff10361614ddd34f994c96f5e",
+      "exported_sha256": "0b3a6ecb0df558fc9357ed65de03b99fa999194ff10361614ddd34f994c96f5e",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/evaluate_confirmed_batch.py",
+      "target": "tools/object_annotation/evaluate_confirmed_batch.py",
+      "source_sha256": "c102575e1ff23440a8926353d0cebba05b020812072d1133e1dd5ccf72ccb549",
+      "exported_sha256": "c102575e1ff23440a8926353d0cebba05b020812072d1133e1dd5ccf72ccb549",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/evaluate_mask_audit.py",
+      "target": "tools/object_annotation/evaluate_mask_audit.py",
+      "source_sha256": "a2f5440ef079f2697b2c33c786af2b90d569dc1366b7814e8dafda3d463e69be",
+      "exported_sha256": "a2f5440ef079f2697b2c33c786af2b90d569dc1366b7814e8dafda3d463e69be",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/export_assistant_review.py",
+      "target": "tools/object_annotation/export_assistant_review.py",
+      "source_sha256": "ef44446daf7689a03d41fe9e1f3a86123844ecc3666801054ceb7deeaa7e4305",
+      "exported_sha256": "ef44446daf7689a03d41fe9e1f3a86123844ecc3666801054ceb7deeaa7e4305",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/export_audit_labels.py",
+      "target": "tools/object_annotation/export_audit_labels.py",
+      "source_sha256": "d60d2c148e034bcc24860465cccd39eb052b544d7d390146fccf3664fe044e38",
+      "exported_sha256": "d60d2c148e034bcc24860465cccd39eb052b544d7d390146fccf3664fe044e38",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/export_robot_parts_qa.py",
+      "target": "tools/object_annotation/export_robot_parts_qa.py",
+      "source_sha256": "1c839d4f9fa4567fad83ed5f4b0a91b15227c90c3672b57d9e54d9cd8367533e",
+      "exported_sha256": "1c839d4f9fa4567fad83ed5f4b0a91b15227c90c3672b57d9e54d9cd8367533e",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/finalize_semantic_seams.py",
+      "target": "tools/object_annotation/finalize_semantic_seams.py",
+      "source_sha256": "2f8e44646d6501789fc3a4533e012d1ac8212e68da6849eab9d8ba95f688109b",
+      "exported_sha256": "2f8e44646d6501789fc3a4533e012d1ac8212e68da6849eab9d8ba95f688109b",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/full_episode_reentry.py",
+      "target": "tools/object_annotation/full_episode_reentry.py",
+      "source_sha256": "ce98b50953e3ace5e0a516cfd1218af098956317f2811896d3a86e316269b99f",
+      "exported_sha256": "ce98b50953e3ace5e0a516cfd1218af098956317f2811896d3a86e316269b99f",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/full_queue.py",
+      "target": "tools/object_annotation/full_queue.py",
+      "source_sha256": "a74c519501b349f642c126b1e577a1f8898ae56a93d0f7b412f419a570dc2170",
+      "exported_sha256": "a74c519501b349f642c126b1e577a1f8898ae56a93d0f7b412f419a570dc2170",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/full_segmentation.py",
+      "target": "tools/object_annotation/full_segmentation.py",
+      "source_sha256": "19e8f5eee4fdbe1f52591ba697d23e7bbd4981880c7f97bde55631bf3d2ea741",
+      "exported_sha256": "19e8f5eee4fdbe1f52591ba697d23e7bbd4981880c7f97bde55631bf3d2ea741",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/identity_guard.py",
+      "target": "tools/object_annotation/identity_guard.py",
+      "source_sha256": "25466e9621f2c6663dc45828ed617d8d2f94bb9f508ec34a7118fa2c325d6a04",
+      "exported_sha256": "25466e9621f2c6663dc45828ed617d8d2f94bb9f508ec34a7118fa2c325d6a04",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/import_confirmed_audit.py",
+      "target": "tools/object_annotation/import_confirmed_audit.py",
+      "source_sha256": "deccc493f2c31bd77889e916d9539cd95f54e1c859def05d7789558a3793bab3",
+      "exported_sha256": "deccc493f2c31bd77889e916d9539cd95f54e1c859def05d7789558a3793bab3",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/import_final_mask_bundle.py",
+      "target": "tools/object_annotation/import_final_mask_bundle.py",
+      "source_sha256": "9601cd615413bebc2fd865fac00e3a2dce1cf1ab032c978f02d5083f17adc0d5",
+      "exported_sha256": "9601cd615413bebc2fd865fac00e3a2dce1cf1ab032c978f02d5083f17adc0d5",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/inspect_seed_bank_recovery.py",
+      "target": "tools/object_annotation/inspect_seed_bank_recovery.py",
+      "source_sha256": "96e2cedef7edf62f2290b643051af5dc1282ea44820f9eb8c27a9cda8eca710b",
+      "exported_sha256": "96e2cedef7edf62f2290b643051af5dc1282ea44820f9eb8c27a9cda8eca710b",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/make_segmentation_preflight.py",
+      "target": "tools/object_annotation/make_segmentation_preflight.py",
+      "source_sha256": "5776cb531108601e31871c8657ab94a9803bd02a2967b3f404f93950d953f1cc",
+      "exported_sha256": "5776cb531108601e31871c8657ab94a9803bd02a2967b3f404f93950d953f1cc",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/mask_pilot.py",
+      "target": "tools/object_annotation/mask_pilot.py",
+      "source_sha256": "55b1cbd67ddf6dcdc0b2b9e2964473ea287646b1aee8536ce4193b1bfe1a1f01",
+      "exported_sha256": "55b1cbd67ddf6dcdc0b2b9e2964473ea287646b1aee8536ce4193b1bfe1a1f01",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/mask_qa.py",
+      "target": "tools/object_annotation/mask_qa.py",
+      "source_sha256": "cc2d56896d312258aea15dd1adc6236d4f56352675db1f68fe5c023d4d1f452b",
+      "exported_sha256": "cc2d56896d312258aea15dd1adc6236d4f56352675db1f68fe5c023d4d1f452b",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/masks.py",
+      "target": "tools/object_annotation/masks.py",
+      "source_sha256": "34e2d0c1b8a9b857a77be7e3298c66b60f1165385c9d01fb553783135998c16b",
+      "exported_sha256": "34e2d0c1b8a9b857a77be7e3298c66b60f1165385c9d01fb553783135998c16b",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/materialize_seeds.py",
+      "target": "tools/object_annotation/materialize_seeds.py",
+      "source_sha256": "3d539fff406252d50bce273b82520600794802082d0703d82a7e00c8831d72f9",
+      "exported_sha256": "3d539fff406252d50bce273b82520600794802082d0703d82a7e00c8831d72f9",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/multitask_canary_artifacts.py",
+      "target": "tools/object_annotation/multitask_canary_artifacts.py",
+      "source_sha256": "97c0dc8af541cde09553cd423277e390aa70a868f59d426a1395babb19541ad4",
+      "exported_sha256": "97c0dc8af541cde09553cd423277e390aa70a868f59d426a1395babb19541ad4",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/multitask_reseed_canary.py",
+      "target": "tools/object_annotation/multitask_reseed_canary.py",
+      "source_sha256": "981a684b5100a3123f968980874ed4d3da1e2d45728a66a81f8fd89b5f2caefa",
+      "exported_sha256": "981a684b5100a3123f968980874ed4d3da1e2d45728a66a81f8fd89b5f2caefa",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/package_assistant_review.py",
+      "target": "tools/object_annotation/package_assistant_review.py",
+      "source_sha256": "f272311b1fbd54d836f3ace95fbb9aadaa2d8e6c66bdca705b47fa6fb296ee31",
+      "exported_sha256": "f272311b1fbd54d836f3ace95fbb9aadaa2d8e6c66bdca705b47fa6fb296ee31",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/package_seed_admission.py",
+      "target": "tools/object_annotation/package_seed_admission.py",
+      "source_sha256": "b638c35424c594e2991c2d98c3aa21f1b6ab70674ba5466561bad6cd498ac3c2",
+      "exported_sha256": "b638c35424c594e2991c2d98c3aa21f1b6ab70674ba5466561bad6cd498ac3c2",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/package_seed_bank_recovery.py",
+      "target": "tools/object_annotation/package_seed_bank_recovery.py",
+      "source_sha256": "d2b976f0718ef949cd515cd57fcc5a698ef2ee540666a343ba6a006704e6cd90",
+      "exported_sha256": "d2b976f0718ef949cd515cd57fcc5a698ef2ee540666a343ba6a006704e6cd90",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/package_seed_bank_transfer.py",
+      "target": "tools/object_annotation/package_seed_bank_transfer.py",
+      "source_sha256": "203fbacce4b7755fe036926cb4874ff38312bd69fd01e0b20909249a879188d3",
+      "exported_sha256": "203fbacce4b7755fe036926cb4874ff38312bd69fd01e0b20909249a879188d3",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/portable_start.py",
+      "target": "tools/object_annotation/portable_start.py",
+      "source_sha256": "3476ba5e8b5603b0beb7b10223fe26c2636251b09887d219854f8bdb143c3606",
+      "exported_sha256": "3476ba5e8b5603b0beb7b10223fe26c2636251b09887d219854f8bdb143c3606",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/probe_identity.py",
+      "target": "tools/object_annotation/probe_identity.py",
+      "source_sha256": "aa3f46cf5aea410015b45064b2c127f4c367b1c0cff03096dab1aaa889e38e20",
+      "exported_sha256": "aa3f46cf5aea410015b45064b2c127f4c367b1c0cff03096dab1aaa889e38e20",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/probe_multitask_canary_bank.py",
+      "target": "tools/object_annotation/probe_multitask_canary_bank.py",
+      "source_sha256": "9e4450227a67c9746bc16b15bf1bc940721f3ecd09c4a5cbddfed28baafd7e28",
+      "exported_sha256": "9e4450227a67c9746bc16b15bf1bc940721f3ecd09c4a5cbddfed28baafd7e28",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/probe_prompts.py",
+      "target": "tools/object_annotation/probe_prompts.py",
+      "source_sha256": "7c453ff6c58be9bde20412eea079c2896c0a31d4162f464287209c99b25d5975",
+      "exported_sha256": "7c453ff6c58be9bde20412eea079c2896c0a31d4162f464287209c99b25d5975",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/probe_robot.py",
+      "target": "tools/object_annotation/probe_robot.py",
+      "source_sha256": "c0b61287201282cb868f508bba9052aa1fa197577c3b74b301ac9cb8b41476de",
+      "exported_sha256": "c0b61287201282cb868f508bba9052aa1fa197577c3b74b301ac9cb8b41476de",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/probe_semantic_interval_bank.py",
+      "target": "tools/object_annotation/probe_semantic_interval_bank.py",
+      "source_sha256": "3ab2f20db455b8f098221d889f2600347ab60c30075718d5b61b582f7d8f1c17",
+      "exported_sha256": "3ab2f20db455b8f098221d889f2600347ab60c30075718d5b61b582f7d8f1c17",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/propose_seeds.py",
+      "target": "tools/object_annotation/propose_seeds.py",
+      "source_sha256": "4dacfd0a62f6d5e51fbcaaf8573ed895f296fdeecb44190b1a85297afe514100",
+      "exported_sha256": "4dacfd0a62f6d5e51fbcaaf8573ed895f296fdeecb44190b1a85297afe514100",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/recovery.py",
+      "target": "tools/object_annotation/recovery.py",
+      "source_sha256": "84c0c23f560c4ee0499face1df551ce6d0a4619db7e6d40e34b9ca154cf918fe",
+      "exported_sha256": "84c0c23f560c4ee0499face1df551ce6d0a4619db7e6d40e34b9ca154cf918fe",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/recovery_pilot.py",
+      "target": "tools/object_annotation/recovery_pilot.py",
+      "source_sha256": "04ae570e592591d7abdba56287a28df5db9f9ff5bae1cee12980d2da8c4ba43c",
+      "exported_sha256": "04ae570e592591d7abdba56287a28df5db9f9ff5bae1cee12980d2da8c4ba43c",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/reentry_artifacts.py",
+      "target": "tools/object_annotation/reentry_artifacts.py",
+      "source_sha256": "5539b27b8428c29621851495004c999b928532d93715011c7b62b173945adfc7",
+      "exported_sha256": "5539b27b8428c29621851495004c999b928532d93715011c7b62b173945adfc7",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/refine_semantic_boundaries.py",
+      "target": "tools/object_annotation/refine_semantic_boundaries.py",
+      "source_sha256": "12a8187bd8eb8e12c08035f5c0be911270cf46fa855e23108d01fd715207c75c",
+      "exported_sha256": "12a8187bd8eb8e12c08035f5c0be911270cf46fa855e23108d01fd715207c75c",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/render_frames.py",
+      "target": "tools/object_annotation/render_frames.py",
+      "source_sha256": "dedcc9dc62e7f0ea7a9493de891634896bd8a5ac257ac0b2e4259b7cd6a9066c",
+      "exported_sha256": "dedcc9dc62e7f0ea7a9493de891634896bd8a5ac257ac0b2e4259b7cd6a9066c",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/repair_calibration64.py",
+      "target": "tools/object_annotation/repair_calibration64.py",
+      "source_sha256": "efd6461b6d7688a434e5e5cc861f88d896b1d0c10fa2e4d8ac095a2684f58e7c",
+      "exported_sha256": "efd6461b6d7688a434e5e5cc861f88d896b1d0c10fa2e4d8ac095a2684f58e7c",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/repair_confirmed_windows.py",
+      "target": "tools/object_annotation/repair_confirmed_windows.py",
+      "source_sha256": "b55f30ac6850cca7277a4dc536c6d49fe164f7aee580bb3487bcc063a6b522c6",
+      "exported_sha256": "b55f30ac6850cca7277a4dc536c6d49fe164f7aee580bb3487bcc063a6b522c6",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/repair_multitask_canary.py",
+      "target": "tools/object_annotation/repair_multitask_canary.py",
+      "source_sha256": "071c9245ef0e2e6923180ec74ac9f6073636dda104d7a305b7a123d12b19e803",
+      "exported_sha256": "071c9245ef0e2e6923180ec74ac9f6073636dda104d7a305b7a123d12b19e803",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/requirements.txt",
+      "target": "tools/object_annotation/requirements.txt",
+      "source_sha256": "8980827eaf8f1252923b31eb4b83e4134672bb11bd3eda3cc9b56aeb746971ef",
+      "exported_sha256": "8980827eaf8f1252923b31eb4b83e4134672bb11bd3eda3cc9b56aeb746971ef",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/rescore_seed_bank_pilot.py",
+      "target": "tools/object_annotation/rescore_seed_bank_pilot.py",
+      "source_sha256": "b3ee1e61704de569957bc42a3a2c63a1c935e9c9ad8fd06c879a2932005183cd",
+      "exported_sha256": "b3ee1e61704de569957bc42a3a2c63a1c935e9c9ad8fd06c879a2932005183cd",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/reseed_window_objects.py",
+      "target": "tools/object_annotation/reseed_window_objects.py",
+      "source_sha256": "a26a7ae8c1b9e3c7da52469f2822c535bb3015d3ed5688e8d40fb3ea185423c7",
+      "exported_sha256": "a26a7ae8c1b9e3c7da52469f2822c535bb3015d3ed5688e8d40fb3ea185423c7",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/review_full_segmentation.py",
+      "target": "tools/object_annotation/review_full_segmentation.py",
+      "source_sha256": "4da8ffb097c401e36e56ff2d4f7fdbce55090144d9ae8ca5d2cc24c3e164c899",
+      "exported_sha256": "4da8ffb097c401e36e56ff2d4f7fdbce55090144d9ae8ca5d2cc24c3e164c899",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/revise_admission_prompts.py",
+      "target": "tools/object_annotation/revise_admission_prompts.py",
+      "source_sha256": "06277abb4a1d4b9e56ada794250c4e1e1dc1c663d1bf2696e263b284d466d3a7",
+      "exported_sha256": "06277abb4a1d4b9e56ada794250c4e1e1dc1c663d1bf2696e263b284d466d3a7",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/robot_parts.py",
+      "target": "tools/object_annotation/robot_parts.py",
+      "source_sha256": "a77cefcfb04bcaf68eec2f82e3b893a2283dc81a9c427a8dd55f6f5d1cf9242d",
+      "exported_sha256": "a77cefcfb04bcaf68eec2f82e3b893a2283dc81a9c427a8dd55f6f5d1cf9242d",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/robot_parts_probe.py",
+      "target": "tools/object_annotation/robot_parts_probe.py",
+      "source_sha256": "eb14152be43ac42c28addae617a8dbe9683f6dccfe8de9346719ed29b36b87e7",
+      "exported_sha256": "eb14152be43ac42c28addae617a8dbe9683f6dccfe8de9346719ed29b36b87e7",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/sam2_refine.py",
+      "target": "tools/object_annotation/sam2_refine.py",
+      "source_sha256": "3661148c03055a3a83bf3f1725485e7d4343f38a1b337bf03537a56b07f4caa0",
+      "exported_sha256": "3661148c03055a3a83bf3f1725485e7d4343f38a1b337bf03537a56b07f4caa0",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/score_assisted_pilot.py",
+      "target": "tools/object_annotation/score_assisted_pilot.py",
+      "source_sha256": "a01816934f1dbbb6b692a9915a96c5340558d9defb0b3c480653353e5d399985",
+      "exported_sha256": "a01816934f1dbbb6b692a9915a96c5340558d9defb0b3c480653353e5d399985",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/seed_admission_pilot.py",
+      "target": "tools/object_annotation/seed_admission_pilot.py",
+      "source_sha256": "533ac4ccc1860e7642d54de9d295b873ba75c284574c3f5e84c994ab612714bc",
+      "exported_sha256": "533ac4ccc1860e7642d54de9d295b873ba75c284574c3f5e84c994ab612714bc",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/seed_bank.py",
+      "target": "tools/object_annotation/seed_bank.py",
+      "source_sha256": "e1f746ce82de2b533104d440f2dffdb40d820fe2e83d5c6758a06819e525e9be",
+      "exported_sha256": "e1f746ce82de2b533104d440f2dffdb40d820fe2e83d5c6758a06819e525e9be",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/seed_bank_pilot.py",
+      "target": "tools/object_annotation/seed_bank_pilot.py",
+      "source_sha256": "09b7370b8b6955a672c8fc4da1f55b1c870b54fff8a925fa7915fa0d180bd96a",
+      "exported_sha256": "09b7370b8b6955a672c8fc4da1f55b1c870b54fff8a925fa7915fa0d180bd96a",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/seed_bank_recovery.py",
+      "target": "tools/object_annotation/seed_bank_recovery.py",
+      "source_sha256": "548300b2fdf0c65921c9c4841eb876f420753f4738ef98f4a20608c8382a62ab",
+      "exported_sha256": "548300b2fdf0c65921c9c4841eb876f420753f4738ef98f4a20608c8382a62ab",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/seed_bank_review.py",
+      "target": "tools/object_annotation/seed_bank_review.py",
+      "source_sha256": "f3d7443615c0f15b47fadd0ff67924696c246d604a10e97bff9494eca082f942",
+      "exported_sha256": "f3d7443615c0f15b47fadd0ff67924696c246d604a10e97bff9494eca082f942",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/seed_bank_tables.py",
+      "target": "tools/object_annotation/seed_bank_tables.py",
+      "source_sha256": "8c8e780622cce4507895b6bf88ac32fd0eef188c23ae90a917dc781b1d546cea",
+      "exported_sha256": "8c8e780622cce4507895b6bf88ac32fd0eef188c23ae90a917dc781b1d546cea",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/seed_bank_transfer.py",
+      "target": "tools/object_annotation/seed_bank_transfer.py",
+      "source_sha256": "aa44d6ee0113966c014350d975094f48574596319fd5ac08fc6ccf5850fbe60d",
+      "exported_sha256": "aa44d6ee0113966c014350d975094f48574596319fd5ac08fc6ccf5850fbe60d",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/seed_bank_transfer_qa.py",
+      "target": "tools/object_annotation/seed_bank_transfer_qa.py",
+      "source_sha256": "b6972748974a0d21df5c186dff667c92c97e6c6c0e2b63c8f2a1957f1c5abca4",
+      "exported_sha256": "b6972748974a0d21df5c186dff667c92c97e6c6c0e2b63c8f2a1957f1c5abca4",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/semantic_interval_artifacts.py",
+      "target": "tools/object_annotation/semantic_interval_artifacts.py",
+      "source_sha256": "ad8e88727ff0340b732ffc9f18078f6a37f42cd1d6cd30321bbd099f8bad4430",
+      "exported_sha256": "ad8e88727ff0340b732ffc9f18078f6a37f42cd1d6cd30321bbd099f8bad4430",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/semantic_interval_repair.py",
+      "target": "tools/object_annotation/semantic_interval_repair.py",
+      "source_sha256": "032905d081687c655948d1a9aeab2c3ffff37c5cea2d66822ca24ff25b6026aa",
+      "exported_sha256": "032905d081687c655948d1a9aeab2c3ffff37c5cea2d66822ca24ff25b6026aa",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/summarize.py",
+      "target": "tools/object_annotation/summarize.py",
+      "source_sha256": "26f27031f23008c49138dd2c60374246da922a31f90ac9f1f01910b01270cd82",
+      "exported_sha256": "26f27031f23008c49138dd2c60374246da922a31f90ac9f1f01910b01270cd82",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/test_audit_browser.py",
+      "target": "tools/object_annotation/test_audit_browser.py",
+      "source_sha256": "55c1b6ddd88fdf14975d842150efaa0fac975ac15d484f637e80c227cfe5ce72",
+      "exported_sha256": "55c1b6ddd88fdf14975d842150efaa0fac975ac15d484f637e80c227cfe5ce72",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/test_confirmed_batch.py",
+      "target": "tools/object_annotation/test_confirmed_batch.py",
+      "source_sha256": "89f69898148070e7acc4cda96f2cbb629bf24529abbec88f201d51ed66f1cd53",
+      "exported_sha256": "89f69898148070e7acc4cda96f2cbb629bf24529abbec88f201d51ed66f1cd53",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/test_confirmed_import.py",
+      "target": "tools/object_annotation/test_confirmed_import.py",
+      "source_sha256": "966eef69e7c4327a27a7dcd738a8b2ef8f98c774f5209ee40c79748ee273c765",
+      "exported_sha256": "966eef69e7c4327a27a7dcd738a8b2ef8f98c774f5209ee40c79748ee273c765",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/test_contract.py",
+      "target": "tools/object_annotation/test_contract.py",
+      "source_sha256": "c58aa9093572e8f03d5cf64ffa7be5b900b8e88503762679f2bd6f1d0051e858",
+      "exported_sha256": "c58aa9093572e8f03d5cf64ffa7be5b900b8e88503762679f2bd6f1d0051e858",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/test_full_episode_reentry.py",
+      "target": "tools/object_annotation/test_full_episode_reentry.py",
+      "source_sha256": "f5a7c468eb5b1582b4ce94f0556ddc8faa7290f177572fc146c6a270b40229c1",
+      "exported_sha256": "f5a7c468eb5b1582b4ce94f0556ddc8faa7290f177572fc146c6a270b40229c1",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/test_full_segmentation.py",
+      "target": "tools/object_annotation/test_full_segmentation.py",
+      "source_sha256": "ec7dce4a3a699033a77f727aa5a4877a0b2ee540df9f5c6304a448d6145f3a8c",
+      "exported_sha256": "ec7dce4a3a699033a77f727aa5a4877a0b2ee540df9f5c6304a448d6145f3a8c",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/test_mask_audit.py",
+      "target": "tools/object_annotation/test_mask_audit.py",
+      "source_sha256": "06973291a8545dc879e02900abca16452a8db267a38fdee0c0eef6f42df0e7fc",
+      "exported_sha256": "06973291a8545dc879e02900abca16452a8db267a38fdee0c0eef6f42df0e7fc",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/test_masks.py",
+      "target": "tools/object_annotation/test_masks.py",
+      "source_sha256": "e70778a94694bde6bbab0855779b75559532a3ba0215691682f94e155f340c93",
+      "exported_sha256": "e70778a94694bde6bbab0855779b75559532a3ba0215691682f94e155f340c93",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/test_portable_audit.py",
+      "target": "tools/object_annotation/test_portable_audit.py",
+      "source_sha256": "4bd91282609a76f01337202f0869434c4adf3bf78d6129e6c04fa929b96dc730",
+      "exported_sha256": "4bd91282609a76f01337202f0869434c4adf3bf78d6129e6c04fa929b96dc730",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/test_recovery.py",
+      "target": "tools/object_annotation/test_recovery.py",
+      "source_sha256": "fd3be0fd77857bc5349404f7425bda720e9b1fd5d5a7f4715e49ae7ad52b6419",
+      "exported_sha256": "fd3be0fd77857bc5349404f7425bda720e9b1fd5d5a7f4715e49ae7ad52b6419",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/test_robot_parts.py",
+      "target": "tools/object_annotation/test_robot_parts.py",
+      "source_sha256": "0f06b4e82fc488f66cc89cb9bbc9ecbdead75f4fa2c32611f9c906f55353057d",
+      "exported_sha256": "0f06b4e82fc488f66cc89cb9bbc9ecbdead75f4fa2c32611f9c906f55353057d",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/test_seed_admission.py",
+      "target": "tools/object_annotation/test_seed_admission.py",
+      "source_sha256": "b146ee791225580b1a5f786e306a1563a4000ed586e9dc2a91bc00f42badb466",
+      "exported_sha256": "b146ee791225580b1a5f786e306a1563a4000ed586e9dc2a91bc00f42badb466",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/test_seed_bank.py",
+      "target": "tools/object_annotation/test_seed_bank.py",
+      "source_sha256": "69708afff144d5a909a0397d7a38877840cd77077c0687f604f2f9172944d579",
+      "exported_sha256": "69708afff144d5a909a0397d7a38877840cd77077c0687f604f2f9172944d579",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/test_seed_bank_recovery.py",
+      "target": "tools/object_annotation/test_seed_bank_recovery.py",
+      "source_sha256": "0bfb5eedd02432b827a49f501730b18d0837849b4ccb26c6fa271ae340a0ba76",
+      "exported_sha256": "0bfb5eedd02432b827a49f501730b18d0837849b4ccb26c6fa271ae340a0ba76",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/test_seed_bank_transfer.py",
+      "target": "tools/object_annotation/test_seed_bank_transfer.py",
+      "source_sha256": "90c1191084692fcd9eff0dd9f789ac952578c2e603094c42fabb813465bdd080",
+      "exported_sha256": "90c1191084692fcd9eff0dd9f789ac952578c2e603094c42fabb813465bdd080",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/test_semantic_interval.py",
+      "target": "tools/object_annotation/test_semantic_interval.py",
+      "source_sha256": "4ffd608f6c5a079e7629974833e5c0603a7c9ae67bf36fa9d562b82df3cd59c9",
+      "exported_sha256": "4ffd608f6c5a079e7629974833e5c0603a7c9ae67bf36fa9d562b82df3cd59c9",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/validate_calibration64.py",
+      "target": "tools/object_annotation/validate_calibration64.py",
+      "source_sha256": "3176136e5cb46d9a0f35c387eab2ce744495f88770bc3268d85a02167ea71f21",
+      "exported_sha256": "3176136e5cb46d9a0f35c387eab2ce744495f88770bc3268d85a02167ea71f21",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/validate_full_reentry.py",
+      "target": "tools/object_annotation/validate_full_reentry.py",
+      "source_sha256": "4825c2c3a5ae6ac448bad44541cb262e6b83f1698ea9f7a66b5e72aff81b1dec",
+      "exported_sha256": "4825c2c3a5ae6ac448bad44541cb262e6b83f1698ea9f7a66b5e72aff81b1dec",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/validate_recovery.py",
+      "target": "tools/object_annotation/validate_recovery.py",
+      "source_sha256": "69f337603edac351b49a7b166475e12e651be79a94ebbb702f13f113bdff3d16",
+      "exported_sha256": "69f337603edac351b49a7b166475e12e651be79a94ebbb702f13f113bdff3d16",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/validate_repair_windows.py",
+      "target": "tools/object_annotation/validate_repair_windows.py",
+      "source_sha256": "7e56fcff52b8dcc1cd053a070a0ebeb43fb683a0e3added557833f882e6985dd",
+      "exported_sha256": "7e56fcff52b8dcc1cd053a070a0ebeb43fb683a0e3added557833f882e6985dd",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/validate_reseed_window.py",
+      "target": "tools/object_annotation/validate_reseed_window.py",
+      "source_sha256": "41c9fff61b5a0fd6265caf600bd6865203d22ce49c7d73e1a6435dd9e7d8fb21",
+      "exported_sha256": "41c9fff61b5a0fd6265caf600bd6865203d22ce49c7d73e1a6435dd9e7d8fb21",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/validate_seed_admission.py",
+      "target": "tools/object_annotation/validate_seed_admission.py",
+      "source_sha256": "a8efe7d2855452f4ede8e80176fb28e3668c62f9788285cde7f44404bd7adf9d",
+      "exported_sha256": "a8efe7d2855452f4ede8e80176fb28e3668c62f9788285cde7f44404bd7adf9d",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/validate_seed_bank.py",
+      "target": "tools/object_annotation/validate_seed_bank.py",
+      "source_sha256": "170f39e7e3dac9ca0ceef71a67954246bb45e30f5575ade70adc9bdf903023a5",
+      "exported_sha256": "170f39e7e3dac9ca0ceef71a67954246bb45e30f5575ade70adc9bdf903023a5",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/validate_seed_bank_recovery.py",
+      "target": "tools/object_annotation/validate_seed_bank_recovery.py",
+      "source_sha256": "fbe794ebc58b9c32a93c04af94093eaa565ec11c717af630a449be6552e6da02",
+      "exported_sha256": "fbe794ebc58b9c32a93c04af94093eaa565ec11c717af630a449be6552e6da02",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/validate_seed_bank_transfer.py",
+      "target": "tools/object_annotation/validate_seed_bank_transfer.py",
+      "source_sha256": "fe7ebacc61ab9af16721aefdc3ea686a80fa5660ee8606355b0560c9ddb9ef6a",
+      "exported_sha256": "fe7ebacc61ab9af16721aefdc3ea686a80fa5660ee8606355b0560c9ddb9ef6a",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/validate_semantic_interval.py",
+      "target": "tools/object_annotation/validate_semantic_interval.py",
+      "source_sha256": "4355246d01693f83cb9d5870557f82ca0b59fc5c4ab009812482f39ba6131ca3",
+      "exported_sha256": "4355246d01693f83cb9d5870557f82ca0b59fc5c4ab009812482f39ba6131ca3",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "docs/20260916_smoke_test_经验与GPT校验方法.md",
+      "target": "docs/history/20260916_smoke_test_经验与GPT校验方法.md",
+      "source_sha256": "87b180d075f79eecff9c736b065dff94e63b62e28ee1fd5f334452f07d895f3f",
+      "exported_sha256": "8acfd16b72bec3bbd25154810a2f491e57e09648e9a3210b66810cca74ee393f",
+      "transformation": "redact original workspace/env/host strings; redact historical Mac home"
+    },
+    {
+      "source": "docs/mask_assisted_workflow_acceptance_2026-09-17.md",
+      "target": "docs/history/mask_assisted_workflow_acceptance_2026-09-17.md",
+      "source_sha256": "ddabce01e9159282d481f4c09c84be3c2d6be06bb136d5cdff854cf62dda39c7",
+      "exported_sha256": "36a1a333a47bbcbe62f273ae296aa947ea22c757a1b88b9cf3c7348fcf291a72",
+      "transformation": "redact original workspace/env/host strings"
+    },
+    {
+      "source": "docs/robot_arm_ee_segmentation_update_2026-09-17.md",
+      "target": "docs/history/robot_arm_ee_segmentation_update_2026-09-17.md",
+      "source_sha256": "2630d39b764556fbb807eb0ac3cc7292a8fd4066886f9b504e6e5a9c6fa16746",
+      "exported_sha256": "0a7550fbe553ccb9c142ec745f96516453debef04e6fa32506d2214d3280e898",
+      "transformation": "redact original workspace/env/host strings"
+    },
+    {
+      "source": "docs/segmentation_multikeyframe_completion_plan_20260918.md",
+      "target": "docs/history/segmentation_multikeyframe_completion_plan_20260918.md",
+      "source_sha256": "f83d1de5bb62351f67d8b3104730f2a406866fb2cae201c07a16613e0acba962",
+      "exported_sha256": "f83d1de5bb62351f67d8b3104730f2a406866fb2cae201c07a16613e0acba962",
+      "transformation": "redact original workspace/env/host strings"
+    },
+    {
+      "source": "docs/segmentation_completion_batch01_acceptance_20260918.md",
+      "target": "docs/history/segmentation_completion_batch01_acceptance_20260918.md",
+      "source_sha256": "ece270edccee618ae7b62e247a0924b280d2bb0960539584bf73c497690e2484",
+      "exported_sha256": "ece270edccee618ae7b62e247a0924b280d2bb0960539584bf73c497690e2484",
+      "transformation": "redact original workspace/env/host strings"
+    },
+    {
+      "source": "docs/identity_seed_bank_pilot_report_20260918.md",
+      "target": "docs/history/identity_seed_bank_pilot_report_20260918.md",
+      "source_sha256": "f6cdf33593b75db29f6669cf4ef3f97af8ba91d9750d5e104c3b3f90ee6ba16d",
+      "exported_sha256": "f6cdf33593b75db29f6669cf4ef3f97af8ba91d9750d5e104c3b3f90ee6ba16d",
+      "transformation": "redact original workspace/env/host strings"
+    },
+    {
+      "source": "docs/identity_seed_bank_transfer_report_20260918.md",
+      "target": "docs/history/identity_seed_bank_transfer_report_20260918.md",
+      "source_sha256": "daa7fcb6a9e91dd5339f2f0b6fab71b47164438a807523a8207b3fd3f9dbd47a",
+      "exported_sha256": "daa7fcb6a9e91dd5339f2f0b6fab71b47164438a807523a8207b3fd3f9dbd47a",
+      "transformation": "redact original workspace/env/host strings"
+    },
+    {
+      "source": "docs/identity_seed_bank_recovery_report_20260918.md",
+      "target": "docs/history/identity_seed_bank_recovery_report_20260918.md",
+      "source_sha256": "5a36a15e37f0a6d67ea6c651b0b7d7925c50321674532d962b3029b96d50d500",
+      "exported_sha256": "a6f02664137f4c263c1cfde0452ced85fb665ebceebc77eb49d565c623153927",
+      "transformation": "redact original workspace/env/host strings"
+    },
+    {
+      "source": "docs/seed_admission_assisted_pilot_report_20260918.md",
+      "target": "docs/history/seed_admission_assisted_pilot_report_20260918.md",
+      "source_sha256": "285e80af805337427e9439a06e36748dba2b465954839ff7762b482aa74cec8b",
+      "exported_sha256": "6f3ee2786e11bbb1341418cd829ee370125bee42d52069849f0f82c2ea63d8ad",
+      "transformation": "redact original workspace/env/host strings"
+    },
+    {
+      "source": "docs/full_episode_reentry_report_20260918.md",
+      "target": "docs/history/full_episode_reentry_report_20260918.md",
+      "source_sha256": "f3c97afb9f7c490f4a4cf1215bd7f09bdb1938bad27c97042867f265671a6d3f",
+      "exported_sha256": "a5868dda3a2c06c2f82dbc09a15d08695a29349c4f96d7ee42d6fdd192007b20",
+      "transformation": "redact original workspace/env/host strings"
+    },
+    {
+      "source": "docs/semantic_interval_repair_report_20260918.md",
+      "target": "docs/history/semantic_interval_repair_report_20260918.md",
+      "source_sha256": "1832b5d8d955d5176cc142140d780b57ab94923d645b361a0bf4c2401575f944",
+      "exported_sha256": "1832b5d8d955d5176cc142140d780b57ab94923d645b361a0bf4c2401575f944",
+      "transformation": "redact original workspace/env/host strings"
+    },
+    {
+      "source": "docs/multitask_reseed_canary_report_20260919.md",
+      "target": "docs/history/multitask_reseed_canary_report_20260919.md",
+      "source_sha256": "048e000a1ee33f794bd4e9a6edfc2af3d97f12245d154126a6d6572ae6f4cb28",
+      "exported_sha256": "048e000a1ee33f794bd4e9a6edfc2af3d97f12245d154126a6d6572ae6f4cb28",
+      "transformation": "redact original workspace/env/host strings"
+    },
+    {
+      "source": "docs/action_metric_calibration64_data_report_20260919.md",
+      "target": "docs/history/action_metric_calibration64_data_report_20260919.md",
+      "source_sha256": "861b50281d704e32e7a90f29a2547c24739610dd71cdbe8c0d9fb4bc127b63af",
+      "exported_sha256": "861b50281d704e32e7a90f29a2547c24739610dd71cdbe8c0d9fb4bc127b63af",
+      "transformation": "redact original workspace/env/host strings"
+    },
+    {
+      "source": "annotations/mask_audit_confirmed_20260917/images/episode_002478_head_000850.png",
+      "target": "examples/confirmed_audit/images/episode_002478_head_000850.png",
+      "source_sha256": "4143bee7032decef3bc83d4749a418cb962230e1d5317c383adbcdd0a51df8d5",
+      "exported_sha256": "4143bee7032decef3bc83d4749a418cb962230e1d5317c383adbcdd0a51df8d5",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "annotations/mask_audit_confirmed_20260917/human_labels/episode_002478_head_000850__10.json",
+      "target": "examples/confirmed_audit/human_labels/episode_002478_head_000850__10.json",
+      "source_sha256": "dc00c7770f5f70fd299f035e357a1a9da423d0166d517a8e1e308affdfe075a8",
+      "exported_sha256": "dc00c7770f5f70fd299f035e357a1a9da423d0166d517a8e1e308affdfe075a8",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "annotations/mask_audit_confirmed_20260917/human_labels/episode_002478_head_000850__2.json",
+      "target": "examples/confirmed_audit/human_labels/episode_002478_head_000850__2.json",
+      "source_sha256": "9a73c41c7f6eadb254fc530a1cd7d720632b842ba7a427ca73308eb00491934d",
+      "exported_sha256": "9a73c41c7f6eadb254fc530a1cd7d720632b842ba7a427ca73308eb00491934d",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "annotations/mask_audit_confirmed_20260917/human_labels/episode_002478_head_000850__20.json",
+      "target": "examples/confirmed_audit/human_labels/episode_002478_head_000850__20.json",
+      "source_sha256": "0d14c72f7517ab6558f877ae415e5a075d2d806525e61252308819cb5aed1701",
+      "exported_sha256": "0d14c72f7517ab6558f877ae415e5a075d2d806525e61252308819cb5aed1701",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "annotations/mask_audit_confirmed_20260917/human_labels/episode_002478_head_000850__21.json",
+      "target": "examples/confirmed_audit/human_labels/episode_002478_head_000850__21.json",
+      "source_sha256": "6c2284e731ffdb78d888803070e893e23159670eea43e8cd0534d0532dec3453",
+      "exported_sha256": "6c2284e731ffdb78d888803070e893e23159670eea43e8cd0534d0532dec3453",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "annotations/mask_audit_confirmed_20260917/human_labels/episode_002478_head_000850__4.json",
+      "target": "examples/confirmed_audit/human_labels/episode_002478_head_000850__4.json",
+      "source_sha256": "c6033d371184d7ac4777b606fb38fc85e0a15f9807500713fb3bafd2ff224693",
+      "exported_sha256": "c6033d371184d7ac4777b606fb38fc85e0a15f9807500713fb3bafd2ff224693",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "annotations/mask_audit_confirmed_20260917/images/episode_002478_left_wrist_000430.png",
+      "target": "examples/confirmed_audit/images/episode_002478_left_wrist_000430.png",
+      "source_sha256": "5d9a43ea42d53842f505946ef1e2cb43cc214de55e9ab589bd4b5d0a20e98025",
+      "exported_sha256": "5d9a43ea42d53842f505946ef1e2cb43cc214de55e9ab589bd4b5d0a20e98025",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "annotations/mask_audit_confirmed_20260917/human_labels/episode_002478_left_wrist_000430__10.json",
+      "target": "examples/confirmed_audit/human_labels/episode_002478_left_wrist_000430__10.json",
+      "source_sha256": "41721742aff7bd07867ad8e4d91e260146a10474c178ea8af2932084630547cd",
+      "exported_sha256": "41721742aff7bd07867ad8e4d91e260146a10474c178ea8af2932084630547cd",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "annotations/mask_audit_confirmed_20260917/human_labels/episode_002478_left_wrist_000430__2.json",
+      "target": "examples/confirmed_audit/human_labels/episode_002478_left_wrist_000430__2.json",
+      "source_sha256": "5056536b880a82850b654d2bd73eced2bed09b4d2a7b72a61dc9ea33dc645162",
+      "exported_sha256": "5056536b880a82850b654d2bd73eced2bed09b4d2a7b72a61dc9ea33dc645162",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "annotations/mask_audit_confirmed_20260917/human_labels/episode_002478_left_wrist_000430__20.json",
+      "target": "examples/confirmed_audit/human_labels/episode_002478_left_wrist_000430__20.json",
+      "source_sha256": "4bd57d9c59aa42a4b90048b48088e004302001e1d9b5e348ac2eede282d30dbe",
+      "exported_sha256": "4bd57d9c59aa42a4b90048b48088e004302001e1d9b5e348ac2eede282d30dbe",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "annotations/mask_audit_confirmed_20260917/human_labels/episode_002478_left_wrist_000430__21.json",
+      "target": "examples/confirmed_audit/human_labels/episode_002478_left_wrist_000430__21.json",
+      "source_sha256": "e9ff671800655ac5b7e6a9266d6e0d8f57001d431dd75bdce9f9f0f46b45ed8a",
+      "exported_sha256": "e9ff671800655ac5b7e6a9266d6e0d8f57001d431dd75bdce9f9f0f46b45ed8a",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "annotations/mask_audit_confirmed_20260917/human_labels/episode_002478_left_wrist_000430__4.json",
+      "target": "examples/confirmed_audit/human_labels/episode_002478_left_wrist_000430__4.json",
+      "source_sha256": "7aba0ab928e0dede0f051039b841cc378bfaac5cd29bec431087f20ba5e83567",
+      "exported_sha256": "7aba0ab928e0dede0f051039b841cc378bfaac5cd29bec431087f20ba5e83567",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "annotations/mask_audit_confirmed_20260917/images/episode_002478_right_wrist_000475.png",
+      "target": "examples/confirmed_audit/images/episode_002478_right_wrist_000475.png",
+      "source_sha256": "271cea06cb6fe6345fb68fd37f5a89bc0a357978fe8905178a1d328cc17f6312",
+      "exported_sha256": "271cea06cb6fe6345fb68fd37f5a89bc0a357978fe8905178a1d328cc17f6312",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "annotations/mask_audit_confirmed_20260917/human_labels/episode_002478_right_wrist_000475__10.json",
+      "target": "examples/confirmed_audit/human_labels/episode_002478_right_wrist_000475__10.json",
+      "source_sha256": "68792ed2bba26abe62bbd2abd97fc3b50168afd8aff11fc5b26f2dc17d5d27ac",
+      "exported_sha256": "68792ed2bba26abe62bbd2abd97fc3b50168afd8aff11fc5b26f2dc17d5d27ac",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "annotations/mask_audit_confirmed_20260917/human_labels/episode_002478_right_wrist_000475__2.json",
+      "target": "examples/confirmed_audit/human_labels/episode_002478_right_wrist_000475__2.json",
+      "source_sha256": "08f29e87aae605d378e42d48e4c88b59c6922e4a7c53cef9630b3062cfa17698",
+      "exported_sha256": "08f29e87aae605d378e42d48e4c88b59c6922e4a7c53cef9630b3062cfa17698",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "annotations/mask_audit_confirmed_20260917/human_labels/episode_002478_right_wrist_000475__20.json",
+      "target": "examples/confirmed_audit/human_labels/episode_002478_right_wrist_000475__20.json",
+      "source_sha256": "2fb16899ba1e4621a573fae0717742c2b8a866108af7349b736cd269190f5601",
+      "exported_sha256": "2fb16899ba1e4621a573fae0717742c2b8a866108af7349b736cd269190f5601",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "annotations/mask_audit_confirmed_20260917/human_labels/episode_002478_right_wrist_000475__21.json",
+      "target": "examples/confirmed_audit/human_labels/episode_002478_right_wrist_000475__21.json",
+      "source_sha256": "b42a98118dc82b27b7fcbc774562faff7011dc1c81843a160cc91aea203808b2",
+      "exported_sha256": "b42a98118dc82b27b7fcbc774562faff7011dc1c81843a160cc91aea203808b2",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "annotations/mask_audit_confirmed_20260917/human_labels/episode_002478_right_wrist_000475__4.json",
+      "target": "examples/confirmed_audit/human_labels/episode_002478_right_wrist_000475__4.json",
+      "source_sha256": "22b2647764e6eff9ea5da95473388b8f52cfae3e299915a6318c8184fa1970b7",
+      "exported_sha256": "22b2647764e6eff9ea5da95473388b8f52cfae3e299915a6318c8184fa1970b7",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "annotations/action_metric_calibration64_20260919/clips/C001_T01_episode_001608_right_wrist/rgb/00028.png",
+      "target": "examples/kettle_wrist/rgb/00000.png",
+      "source_sha256": "4f5a5273be02b15f31b2fb33d636216a5e384e6a5b38cb86d5e357dbce3e050d",
+      "exported_sha256": "4f5a5273be02b15f31b2fb33d636216a5e384e6a5b38cb86d5e357dbce3e050d",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "annotations/action_metric_calibration64_20260919/clips/C001_T01_episode_001608_right_wrist/rgb/00029.png",
+      "target": "examples/kettle_wrist/rgb/00001.png",
+      "source_sha256": "444ddd0fe7ea998eb0cbdf7533f263a85904d88612fd2032ee02956e36ab64d5",
+      "exported_sha256": "444ddd0fe7ea998eb0cbdf7533f263a85904d88612fd2032ee02956e36ab64d5",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "annotations/action_metric_calibration64_20260919/clips/C001_T01_episode_001608_right_wrist/rgb/00030.png",
+      "target": "examples/kettle_wrist/rgb/00002.png",
+      "source_sha256": "540017c259473f0ec1e55d9d101e98641615cb11f705be9db9b8e38abb67c511",
+      "exported_sha256": "540017c259473f0ec1e55d9d101e98641615cb11f705be9db9b8e38abb67c511",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "annotations/action_metric_calibration64_20260919/clips/C001_T01_episode_001608_right_wrist/rgb/00031.png",
+      "target": "examples/kettle_wrist/rgb/00003.png",
+      "source_sha256": "63d71b1fffc07f1abac7de2e26fc7d7df9369dcc912a46cccf29bd521106b930",
+      "exported_sha256": "63d71b1fffc07f1abac7de2e26fc7d7df9369dcc912a46cccf29bd521106b930",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "annotations/action_metric_calibration64_20260919/clips/C001_T01_episode_001608_right_wrist/rgb/00032.png",
+      "target": "examples/kettle_wrist/rgb/00004.png",
+      "source_sha256": "3b04e11d76fc65f4972137b31c161b0e7de06578c76a314036c8e1080aac0fc2",
+      "exported_sha256": "3b04e11d76fc65f4972137b31c161b0e7de06578c76a314036c8e1080aac0fc2",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "annotations/action_metric_calibration64_20260919/clips/C001_T01_episode_001608_right_wrist/rgb/00033.png",
+      "target": "examples/kettle_wrist/rgb/00005.png",
+      "source_sha256": "cccad83deff251e1af7fe86b2cd3a195eedaadfd46ed3510b086c33e8b5b692c",
+      "exported_sha256": "cccad83deff251e1af7fe86b2cd3a195eedaadfd46ed3510b086c33e8b5b692c",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "annotations/action_metric_calibration64_20260919/clips/C001_T01_episode_001608_right_wrist/rgb/00034.png",
+      "target": "examples/kettle_wrist/rgb/00006.png",
+      "source_sha256": "fcc01f009abe8ba8ae4d340608973a5ee3aaebb80b44860add31d76342f509ad",
+      "exported_sha256": "fcc01f009abe8ba8ae4d340608973a5ee3aaebb80b44860add31d76342f509ad",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "annotations/action_metric_calibration64_20260919/clips/C001_T01_episode_001608_right_wrist/rgb/00035.png",
+      "target": "examples/kettle_wrist/rgb/00007.png",
+      "source_sha256": "7f55083a7df9d60df479bbcc03735440a338cc95a2c5f5f4b92711af23612414",
+      "exported_sha256": "7f55083a7df9d60df479bbcc03735440a338cc95a2c5f5f4b92711af23612414",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "annotations/action_metric_calibration64_20260919/clips/C050_T24_episode_002563_right_wrist/rgb/00000.png",
+      "target": "examples/fruit_reentry/rgb/00000.png",
+      "source_sha256": "42111ab9977d6b4659c3c3fb1ced05c16e1fa734d56fdbf27a4410a2d123b3eb",
+      "exported_sha256": "42111ab9977d6b4659c3c3fb1ced05c16e1fa734d56fdbf27a4410a2d123b3eb",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "annotations/action_metric_calibration64_20260919/clips/C050_T24_episode_002563_right_wrist/rgb/00001.png",
+      "target": "examples/fruit_reentry/rgb/00001.png",
+      "source_sha256": "f8c2e2d039cc896f7084c4caefbaf52e681f485b3aecf1044af06541f269227a",
+      "exported_sha256": "f8c2e2d039cc896f7084c4caefbaf52e681f485b3aecf1044af06541f269227a",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "annotations/action_metric_calibration64_20260919/clips/C050_T24_episode_002563_right_wrist/rgb/00002.png",
+      "target": "examples/fruit_reentry/rgb/00002.png",
+      "source_sha256": "1c6eaa7d9028c041722e3774dde39c7aba2a2ea75d683bc0dd84e98883d60269",
+      "exported_sha256": "1c6eaa7d9028c041722e3774dde39c7aba2a2ea75d683bc0dd84e98883d60269",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "annotations/action_metric_calibration64_20260919/clips/C050_T24_episode_002563_right_wrist/rgb/00003.png",
+      "target": "examples/fruit_reentry/rgb/00003.png",
+      "source_sha256": "ae50009a7bfff17bcd1fc0a89dad9f7573a7cb4dfb2c9da5a9667e085de17fd7",
+      "exported_sha256": "ae50009a7bfff17bcd1fc0a89dad9f7573a7cb4dfb2c9da5a9667e085de17fd7",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "annotations/action_metric_calibration64_20260919/clips/C050_T24_episode_002563_right_wrist/rgb/00004.png",
+      "target": "examples/fruit_reentry/rgb/00004.png",
+      "source_sha256": "4d56eb258125fca896380f6dd2bb0bbfcde8b94d0c6a374e548d8a18351349f8",
+      "exported_sha256": "4d56eb258125fca896380f6dd2bb0bbfcde8b94d0c6a374e548d8a18351349f8",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "annotations/action_metric_calibration64_20260919/clips/C050_T24_episode_002563_right_wrist/rgb/00005.png",
+      "target": "examples/fruit_reentry/rgb/00005.png",
+      "source_sha256": "56269b43dfe5d804e9b6758ce37ac9df38f9b75363afc928463e9732836d86e9",
+      "exported_sha256": "56269b43dfe5d804e9b6758ce37ac9df38f9b75363afc928463e9732836d86e9",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "annotations/action_metric_calibration64_20260919/clips/C050_T24_episode_002563_right_wrist/rgb/00006.png",
+      "target": "examples/fruit_reentry/rgb/00006.png",
+      "source_sha256": "52f1e97795393dfb54dac250fe6704687a37e924e3737182037ac961c9cd5bc2",
+      "exported_sha256": "52f1e97795393dfb54dac250fe6704687a37e924e3737182037ac961c9cd5bc2",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "annotations/action_metric_calibration64_20260919/clips/C050_T24_episode_002563_right_wrist/rgb/00007.png",
+      "target": "examples/fruit_reentry/rgb/00007.png",
+      "source_sha256": "4ed5df1e0181d7523a7eed22c22904491341efb393ef71a488d88f9649c6cdab",
+      "exported_sha256": "4ed5df1e0181d7523a7eed22c22904491341efb393ef71a488d88f9649c6cdab",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "annotations/semantic_interval_repair_20260918/qa/head_banana/00015.jpg",
+      "target": "examples/failure_and_repair/qa/head_banana/00015.jpg",
+      "source_sha256": "f3a3292279382f11260dd72b86b4cbd64c3a1c5ae66e94f2f6c6390bd2bd340f",
+      "exported_sha256": "f3a3292279382f11260dd72b86b4cbd64c3a1c5ae66e94f2f6c6390bd2bd340f",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "annotations/semantic_interval_repair_20260918/qa/head_banana/00547.jpg",
+      "target": "examples/failure_and_repair/qa/head_banana/00547.jpg",
+      "source_sha256": "5598affee9ce552eb69bf96f514964b035fff951f2f1edf78c14998d4d89c63c",
+      "exported_sha256": "5598affee9ce552eb69bf96f514964b035fff951f2f1edf78c14998d4d89c63c",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "annotations/semantic_interval_repair_20260918/qa/right_banana_occlusion/00668.jpg",
+      "target": "examples/failure_and_repair/qa/right_banana_occlusion/00668.jpg",
+      "source_sha256": "a93481c5f9e02399550f57deff675befac7b422a6e04564cc988a87d69b90026",
+      "exported_sha256": "a93481c5f9e02399550f57deff675befac7b422a6e04564cc988a87d69b90026",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "annotations/semantic_interval_repair_20260918/qa/right_banana_occlusion/00748.jpg",
+      "target": "examples/failure_and_repair/qa/right_banana_occlusion/00748.jpg",
+      "source_sha256": "776f5a54536f3c072b7933e5ae2c3ce41c38e64f3acad97995e1edc7ca3934ab",
+      "exported_sha256": "776f5a54536f3c072b7933e5ae2c3ce41c38e64f3acad97995e1edc7ca3934ab",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "annotations/semantic_interval_repair_20260918/qa/right_watermelon_drift/01008.jpg",
+      "target": "examples/failure_and_repair/qa/right_watermelon_drift/01008.jpg",
+      "source_sha256": "51f4b44d706d3fabec83fab05236f5c0223c7c41c0864fdeb77419cf3d24e343",
+      "exported_sha256": "51f4b44d706d3fabec83fab05236f5c0223c7c41c0864fdeb77419cf3d24e343",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "annotations/semantic_interval_repair_20260918/seeds/head_banana_0.jpg",
+      "target": "examples/failure_and_repair/seeds/head_banana_0.jpg",
+      "source_sha256": "1f902942deff2d091a05016b39ae8db8e38d1fb67f17ed76c2afb59eceaa19a5",
+      "exported_sha256": "1f902942deff2d091a05016b39ae8db8e38d1fb67f17ed76c2afb59eceaa19a5",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "annotations/semantic_interval_repair_20260918/seeds/seeds.json",
+      "target": "examples/failure_and_repair/seeds.json",
+      "source_sha256": "6959d5f55ecd201af2297281b7d68c8a032a7928ee8adf6eb4337a6d3cd68792",
+      "exported_sha256": "6959d5f55ecd201af2297281b7d68c8a032a7928ee8adf6eb4337a6d3cd68792",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "tools/object_annotation/config/semantic_interval_repair_20260918.json",
+      "target": "examples/failure_and_repair/prompts.json",
+      "source_sha256": "257463c90272e3eefc3d6bdbf78e47cd46279959e8e3f9678e0ec427418894b2",
+      "exported_sha256": "257463c90272e3eefc3d6bdbf78e47cd46279959e8e3f9678e0ec427418894b2",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "incoming/mask_audit_returns/local_complete_20260916/astribot_smoke_test_full_project_20260916/handoffs/20260916_全量人工确认记录.json",
+      "target": "legacy/mac_smoke_20260916/handoffs/20260916_全量人工确认记录.json",
+      "source_sha256": "dc15dcda025f387d9da5410d3ebb1628f7fbf8c8295d3485e72b16f8a1cd5738",
+      "exported_sha256": "dc15dcda025f387d9da5410d3ebb1628f7fbf8c8295d3485e72b16f8a1cd5738",
+      "transformation": "redact Mac home prefix; preserve historical prompts and confirmation scope"
+    },
+    {
+      "source": "incoming/mask_audit_returns/local_complete_20260916/astribot_smoke_test_full_project_20260916/handoffs/20260916_四项不可见状态确认.json",
+      "target": "legacy/mac_smoke_20260916/handoffs/20260916_四项不可见状态确认.json",
+      "source_sha256": "1df1b0ea3eab6014ebc9174ecb4eaad13c9964fe7d861761553cb973b93c7ff3",
+      "exported_sha256": "1df1b0ea3eab6014ebc9174ecb4eaad13c9964fe7d861761553cb973b93c7ff3",
+      "transformation": "redact Mac home prefix; preserve historical prompts and confirmation scope"
+    },
+    {
+      "source": "incoming/mask_audit_returns/local_complete_20260916/astribot_smoke_test_full_project_20260916/tools/assist_masks.py",
+      "target": "legacy/mac_smoke_20260916/tools/assist_masks.py",
+      "source_sha256": "7fe430a4676b7301c3d5de2a91c4bae092334e742f71ac28d7fce0321a76776f",
+      "exported_sha256": "7fe430a4676b7301c3d5de2a91c4bae092334e742f71ac28d7fce0321a76776f",
+      "transformation": "redact Mac home prefix; preserve historical prompts and confirmation scope"
+    },
+    {
+      "source": "incoming/mask_audit_returns/local_complete_20260916/astribot_smoke_test_full_project_20260916/tools/build_proposals.py",
+      "target": "legacy/mac_smoke_20260916/tools/build_proposals.py",
+      "source_sha256": "c342173c4d109fbb71e3e8adb7375e16427e1730021ae913e89e01ad3603e825",
+      "exported_sha256": "c342173c4d109fbb71e3e8adb7375e16427e1730021ae913e89e01ad3603e825",
+      "transformation": "redact Mac home prefix; preserve historical prompts and confirmation scope"
+    },
+    {
+      "source": "incoming/mask_audit_returns/local_complete_20260916/astribot_smoke_test_full_project_20260916/tools/package_project.py",
+      "target": "legacy/mac_smoke_20260916/tools/package_project.py",
+      "source_sha256": "6bbbc940de18b0c392a400e0ef626c645364970da6b87ca5e5a85e7194e04c08",
+      "exported_sha256": "6bbbc940de18b0c392a400e0ef626c645364970da6b87ca5e5a85e7194e04c08",
+      "transformation": "redact Mac home prefix; preserve historical prompts and confirmation scope"
+    },
+    {
+      "source": "incoming/mask_audit_returns/local_complete_20260916/astribot_smoke_test_full_project_20260916/tools/refine_frames.py",
+      "target": "legacy/mac_smoke_20260916/tools/refine_frames.py",
+      "source_sha256": "e22f9f2eeb036e74f68d3741431e66141b4bfbbd40c16ffb0a3755a3981a43e3",
+      "exported_sha256": "e22f9f2eeb036e74f68d3741431e66141b4bfbbd40c16ffb0a3755a3981a43e3",
+      "transformation": "redact Mac home prefix; preserve historical prompts and confirmation scope"
+    },
+    {
+      "source": "incoming/mask_audit_returns/local_complete_20260916/astribot_smoke_test_full_project_20260916/tools/review_masks.py",
+      "target": "legacy/mac_smoke_20260916/tools/review_masks.py",
+      "source_sha256": "c27b5e0ba9271c19658ca068c316587b49c8a22291f89526ed2a9ee8595b503a",
+      "exported_sha256": "c27b5e0ba9271c19658ca068c316587b49c8a22291f89526ed2a9ee8595b503a",
+      "transformation": "redact Mac home prefix; preserve historical prompts and confirmation scope"
+    },
+    {
+      "source": "incoming/mask_audit_returns/local_complete_20260916/astribot_smoke_test_full_project_20260916/tools/run_review_browser_test.py",
+      "target": "legacy/mac_smoke_20260916/tools/run_review_browser_test.py",
+      "source_sha256": "4109bfdc5dcc8ae944dea2d0a57a04d6476d0e5fdd94349ee7a05fa328c2120e",
+      "exported_sha256": "4109bfdc5dcc8ae944dea2d0a57a04d6476d0e5fdd94349ee7a05fa328c2120e",
+      "transformation": "redact Mac home prefix; preserve historical prompts and confirmation scope"
+    },
+    {
+      "source": "incoming/mask_audit_returns/local_complete_20260916/astribot_smoke_test_full_project_20260916/tools/test_review_server.py",
+      "target": "legacy/mac_smoke_20260916/tools/test_review_server.py",
+      "source_sha256": "cb19032d79aea26c6292392d0939e6c92b9de49adc5ee074979220eb8ae026f8",
+      "exported_sha256": "cb19032d79aea26c6292392d0939e6c92b9de49adc5ee074979220eb8ae026f8",
+      "transformation": "redact Mac home prefix; preserve historical prompts and confirmation scope"
+    },
+    {
+      "source": "incoming/mask_audit_returns/local_complete_20260916/astribot_smoke_test_full_project_20260916/tools/validate_proposals.py",
+      "target": "legacy/mac_smoke_20260916/tools/validate_proposals.py",
+      "source_sha256": "c11e532c3a4d04b535c5d608bd5b76931dd14b356486299358d4222f9516b0de",
+      "exported_sha256": "c11e532c3a4d04b535c5d608bd5b76931dd14b356486299358d4222f9516b0de",
+      "transformation": "redact Mac home prefix; preserve historical prompts and confirmation scope"
+    },
+    {
+      "source": "incoming/mask_audit_returns/local_complete_20260916/astribot_smoke_test_full_project_20260916/tools/verify_project_snapshot.py",
+      "target": "legacy/mac_smoke_20260916/tools/verify_project_snapshot.py",
+      "source_sha256": "9a4ee3d0053b9e465c3ccc923debc637ed12bc40050526ad8c5cff99e2c3f248",
+      "exported_sha256": "9a4ee3d0053b9e465c3ccc923debc637ed12bc40050526ad8c5cff99e2c3f248",
+      "transformation": "redact Mac home prefix; preserve historical prompts and confirmation scope"
+    },
+    {
+      "source": "incoming/mask_audit_returns/local_complete_20260916/astribot_smoke_test_full_project_20260916/work/segmentation/extra_seeds.json",
+      "target": "legacy/mac_smoke_20260916/work/segmentation/extra_seeds.json",
+      "source_sha256": "5bc7108a784315beb3a83f4ddf2a8db62e58e25324f1b97580cf0cf9a2cd61b8",
+      "exported_sha256": "5bc7108a784315beb3a83f4ddf2a8db62e58e25324f1b97580cf0cf9a2cd61b8",
+      "transformation": "redact Mac home prefix; preserve historical prompts and confirmation scope"
+    },
+    {
+      "source": "incoming/mask_audit_returns/local_complete_20260916/astribot_smoke_test_full_project_20260916/work/segmentation/refinement_prompts.json",
+      "target": "legacy/mac_smoke_20260916/work/segmentation/refinement_prompts.json",
+      "source_sha256": "27d9441e10ac89261f10d0e2b52d9b589b0231ce94bfe85dda1f94bde224ce52",
+      "exported_sha256": "27d9441e10ac89261f10d0e2b52d9b589b0231ce94bfe85dda1f94bde224ce52",
+      "transformation": "redact Mac home prefix; preserve historical prompts and confirmation scope"
+    },
+    {
+      "source": "incoming/mask_audit_returns/local_complete_20260916/astribot_smoke_test_full_project_20260916/work/segmentation/scene_decisions.json",
+      "target": "legacy/mac_smoke_20260916/work/segmentation/scene_decisions.json",
+      "source_sha256": "a3fe105e9cec078cc195dedf5e4ed84678e13984574df8da4e9d62e5d699a687",
+      "exported_sha256": "a3fe105e9cec078cc195dedf5e4ed84678e13984574df8da4e9d62e5d699a687",
+      "transformation": "redact Mac home prefix; preserve historical prompts and confirmation scope"
+    }
+  ],
+  "raw_data_included": false,
+  "model_weights_included": false,
+  "examples": "3 human-confirmed RGB frames; 2 released 8-frame clips; 6 repair comparison images",
+  "upstream_code_vendored": false
+}

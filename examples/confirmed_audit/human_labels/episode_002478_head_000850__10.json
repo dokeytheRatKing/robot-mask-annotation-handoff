@@ -1,0 +1,28 @@
+{
+  "sample_id": "episode_002478_head_000850",
+  "episode_id": "episode_002478",
+  "camera": "head",
+  "frame_idx": 850,
+  "object_id": 10,
+  "instance_id": "peach_1",
+  "visibility": "visible",
+  "conditions": [
+    "normal_unoccluded"
+  ],
+  "mask": {
+    "format": "coco_rle",
+    "size": [
+      720,
+      1280
+    ],
+    "counts": "iWc<6Xf06J5J7J6I6K3M2M4M2N3L4M2N3M201N101O001O001N101O1O001O0O2O001O001O0O2O1O001O001N101O001O001O00O101N101N100O2O0O2N100O2O0O2O0O1O2O0O2O0O101N1O2O3L;F;D;F;DVcj="
+  },
+  "annotator": "Simon",
+  "human_confirmed": true,
+  "annotation_method": "manual_pixel_editor",
+  "prediction_prefill": false,
+  "source_image_sha256": "4143bee7032decef3bc83d4749a418cb962230e1d5317c383adbcdd0a51df8d5",
+  "notes": "",
+  "saved_utc": "2026-09-16T11:22:52.026978+00:00",
+  "revision": 1
+}

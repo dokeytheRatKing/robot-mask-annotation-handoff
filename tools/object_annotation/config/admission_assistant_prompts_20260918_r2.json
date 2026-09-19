@@ -1,0 +1,1314 @@
+[
+  {
+    "case_id": "score_T01_head",
+    "frame_idx": 175,
+    "object_id": 1,
+    "status": "visible",
+    "box": [
+      456,
+      365,
+      707,
+      584
+    ],
+    "points": [
+      [
+        591,
+        520
+      ],
+      [
+        501,
+        440
+      ],
+      [
+        551,
+        408
+      ],
+      [
+        722,
+        451
+      ],
+      [
+        636,
+        412
+      ]
+    ],
+    "point_labels": [
+      1,
+      1,
+      1,
+      0,
+      0
+    ]
+  },
+  {
+    "case_id": "score_T01_left_wrist",
+    "frame_idx": 144,
+    "object_id": 1,
+    "status": "visible",
+    "box": [
+      321,
+      216,
+      384,
+      360
+    ],
+    "points": [
+      [
+        350,
+        274
+      ],
+      [
+        352,
+        330
+      ],
+      [
+        311,
+        319
+      ],
+      [
+        397,
+        318
+      ]
+    ],
+    "point_labels": [
+      1,
+      1,
+      0,
+      0
+    ]
+  },
+  {
+    "case_id": "score_T01_right_wrist",
+    "frame_idx": 144,
+    "object_id": 1,
+    "status": "not_visible",
+    "note": "Only pan, basket and grippers visible; kettle not identified."
+  },
+  {
+    "case_id": "score_T09_head",
+    "frame_idx": 475,
+    "object_id": 1,
+    "status": "visible",
+    "box": [
+      414,
+      274,
+      581,
+      477
+    ],
+    "points": [
+      [
+        479,
+        410
+      ],
+      [
+        473,
+        363
+      ],
+      [
+        468,
+        323
+      ],
+      [
+        539,
+        398
+      ],
+      [
+        567,
+        455
+      ]
+    ],
+    "point_labels": [
+      1,
+      1,
+      1,
+      0,
+      0
+    ]
+  },
+  {
+    "case_id": "score_T09_head",
+    "frame_idx": 475,
+    "object_id": 9,
+    "status": "visible",
+    "box": [
+      360,
+      291,
+      617,
+      600
+    ],
+    "points": [
+      [
+        477,
+        543
+      ],
+      [
+        590,
+        348
+      ],
+      [
+        396,
+        463
+      ],
+      [
+        485,
+        409
+      ],
+      [
+        660,
+        481
+      ],
+      [
+        403,
+        547
+      ]
+    ],
+    "point_labels": [
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "case_id": "score_T09_left_wrist",
+    "frame_idx": 235,
+    "object_id": 1,
+    "status": "visible",
+    "box": [
+      244,
+      190,
+      488,
+      360
+    ],
+    "points": [
+      [
+        378,
+        207
+      ],
+      [
+        445,
+        266
+      ],
+      [
+        362,
+        291
+      ],
+      [
+        353,
+        345
+      ],
+      [
+        369,
+        248
+      ],
+      [
+        494,
+        337
+      ]
+    ],
+    "point_labels": [
+      1,
+      1,
+      1,
+      1,
+      0,
+      0
+    ]
+  },
+  {
+    "case_id": "score_T09_left_wrist",
+    "frame_idx": 235,
+    "object_id": 9,
+    "status": "visible",
+    "box": [
+      216,
+      270,
+      303,
+      360
+    ],
+    "points": [
+      [
+        265,
+        294
+      ],
+      [
+        237,
+        315
+      ],
+      [
+        310,
+        332
+      ],
+      [
+        202,
+        316
+      ]
+    ],
+    "point_labels": [
+      1,
+      1,
+      0,
+      0
+    ]
+  },
+  {
+    "case_id": "score_T09_right_wrist",
+    "frame_idx": 265,
+    "object_id": 1,
+    "status": "visible",
+    "box": [
+      220,
+      202,
+      395,
+      360
+    ],
+    "points": [
+      [
+        313,
+        239
+      ],
+      [
+        256,
+        303
+      ],
+      [
+        326,
+        339
+      ],
+      [
+        322,
+        279
+      ],
+      [
+        211,
+        327
+      ],
+      [
+        439,
+        295
+      ]
+    ],
+    "point_labels": [
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "case_id": "score_T09_right_wrist",
+    "frame_idx": 265,
+    "object_id": 9,
+    "status": "visible",
+    "box": [
+      394,
+      0,
+      640,
+      208
+    ],
+    "points": [
+      [
+        507,
+        62
+      ],
+      [
+        440,
+        162
+      ],
+      [
+        558,
+        170
+      ],
+      [
+        451,
+        236
+      ]
+    ],
+    "point_labels": [
+      1,
+      1,
+      0,
+      0
+    ]
+  },
+  {
+    "case_id": "score_T24_head",
+    "frame_idx": 189,
+    "object_id": 2,
+    "status": "uncertain",
+    "note": "Arm occludes table region; yellow pan handle is not banana."
+  },
+  {
+    "case_id": "score_T24_head",
+    "frame_idx": 189,
+    "object_id": 4,
+    "status": "visible",
+    "box": [
+      248,
+      320,
+      716,
+      672
+    ],
+    "points": [
+      [
+        499,
+        482
+      ],
+      [
+        472,
+        366
+      ],
+      [
+        669,
+        551
+      ],
+      [
+        280,
+        510
+      ],
+      [
+        483,
+        610
+      ],
+      [
+        292,
+        646
+      ],
+      [
+        258,
+        612
+      ],
+      [
+        216,
+        540
+      ],
+      [
+        422,
+        601
+      ],
+      [
+        447,
+        568
+      ],
+      [
+        424,
+        663
+      ]
+    ],
+    "point_labels": [
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "note": "Exclude visibly attached left gripper; direct negative prompts, no robot-mask subtraction."
+  },
+  {
+    "case_id": "score_T24_head",
+    "frame_idx": 189,
+    "object_id": 10,
+    "status": "not_visible",
+    "note": "Beige object at right is not peach."
+  },
+  {
+    "case_id": "score_T24_head",
+    "frame_idx": 189,
+    "object_id": 20,
+    "status": "visible",
+    "box": [
+      741,
+      178,
+      839,
+      359
+    ],
+    "points": [
+      [
+        767,
+        327
+      ],
+      [
+        811,
+        221
+      ],
+      [
+        785,
+        275
+      ],
+      [
+        833,
+        294
+      ]
+    ],
+    "point_labels": [
+      1,
+      1,
+      0,
+      0
+    ]
+  },
+  {
+    "case_id": "score_T24_head",
+    "frame_idx": 189,
+    "object_id": 21,
+    "status": "uncertain",
+    "note": "No confidently identified visible avocado; possible occlusion behind arm."
+  },
+  {
+    "case_id": "score_T24_left_wrist",
+    "frame_idx": 355,
+    "object_id": 2,
+    "status": "visible",
+    "box": [
+      436,
+      260,
+      486,
+      360
+    ],
+    "points": [
+      [
+        457,
+        287
+      ],
+      [
+        466,
+        338
+      ],
+      [
+        501,
+        306
+      ]
+    ],
+    "point_labels": [
+      1,
+      1,
+      0
+    ]
+  },
+  {
+    "case_id": "score_T24_left_wrist",
+    "frame_idx": 355,
+    "object_id": 4,
+    "status": "visible",
+    "box": [
+      355,
+      144,
+      640,
+      360
+    ],
+    "points": [
+      [
+        438,
+        236
+      ],
+      [
+        558,
+        179
+      ],
+      [
+        585,
+        279
+      ],
+      [
+        500,
+        314
+      ],
+      [
+        622,
+        206
+      ],
+      [
+        625,
+        252
+      ],
+      [
+        637,
+        275
+      ]
+    ],
+    "point_labels": [
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "note": "Peach boundary exclusion by visible RGB points, not by subtracting another mask."
+  },
+  {
+    "case_id": "score_T24_left_wrist",
+    "frame_idx": 355,
+    "object_id": 10,
+    "status": "visible",
+    "box": [
+      588,
+      154,
+      640,
+      297
+    ],
+    "points": [
+      [
+        625,
+        206
+      ],
+      [
+        625,
+        252
+      ],
+      [
+        637,
+        275
+      ],
+      [
+        580,
+        252
+      ],
+      [
+        603,
+        306
+      ]
+    ],
+    "point_labels": [
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "note": "Include pink blurred peach at right image boundary, not only its pale highlight."
+  },
+  {
+    "case_id": "score_T24_left_wrist",
+    "frame_idx": 355,
+    "object_id": 20,
+    "status": "not_visible",
+    "note": "No red slice visible at this anchor; may enter later."
+  },
+  {
+    "case_id": "score_T24_left_wrist",
+    "frame_idx": 355,
+    "object_id": 21,
+    "status": "not_visible"
+  },
+  {
+    "case_id": "score_T24_right_wrist",
+    "frame_idx": 358,
+    "object_id": 2,
+    "status": "not_visible"
+  },
+  {
+    "case_id": "score_T24_right_wrist",
+    "frame_idx": 358,
+    "object_id": 4,
+    "status": "not_visible",
+    "note": "No basket pixels confidently visible at current camera orientation."
+  },
+  {
+    "case_id": "score_T24_right_wrist",
+    "frame_idx": 358,
+    "object_id": 10,
+    "status": "not_visible"
+  },
+  {
+    "case_id": "score_T24_right_wrist",
+    "frame_idx": 358,
+    "object_id": 20,
+    "status": "not_visible"
+  },
+  {
+    "case_id": "score_T24_right_wrist",
+    "frame_idx": 358,
+    "object_id": 21,
+    "status": "not_visible"
+  },
+  {
+    "case_id": "new_T1_left_head",
+    "frame_idx": 88,
+    "object_id": 1,
+    "status": "visible",
+    "box": [
+      548,
+      304,
+      707,
+      522
+    ],
+    "points": [
+      [
+        673,
+        417
+      ],
+      [
+        590,
+        390
+      ],
+      [
+        622,
+        336
+      ],
+      [
+        625,
+        495
+      ],
+      [
+        630,
+        434
+      ],
+      [
+        557,
+        464
+      ]
+    ],
+    "point_labels": [
+      1,
+      1,
+      1,
+      1,
+      0,
+      0
+    ]
+  },
+  {
+    "case_id": "new_T1_left_head",
+    "frame_idx": 138,
+    "object_id": 1,
+    "status": "visible",
+    "box": [
+      363,
+      238,
+      595,
+      455
+    ],
+    "points": [
+      [
+        511,
+        386
+      ],
+      [
+        508,
+        284
+      ],
+      [
+        451,
+        328
+      ],
+      [
+        401,
+        361
+      ],
+      [
+        333,
+        423
+      ]
+    ],
+    "point_labels": [
+      1,
+      1,
+      1,
+      0,
+      0
+    ]
+  },
+  {
+    "case_id": "new_T24_left_head",
+    "frame_idx": 548,
+    "object_id": 2,
+    "status": "visible",
+    "box": [
+      91,
+      409,
+      258,
+      552
+    ],
+    "points": [
+      [
+        177,
+        454
+      ],
+      [
+        230,
+        508
+      ],
+      [
+        186,
+        505
+      ]
+    ],
+    "point_labels": [
+      1,
+      1,
+      0
+    ]
+  },
+  {
+    "case_id": "new_T24_left_head",
+    "frame_idx": 548,
+    "object_id": 4,
+    "status": "visible",
+    "box": [
+      573,
+      244,
+      1015,
+      520
+    ],
+    "points": [
+      [
+        648,
+        393
+      ],
+      [
+        869,
+        436
+      ],
+      [
+        914,
+        281
+      ],
+      [
+        724,
+        345
+      ],
+      [
+        992,
+        411
+      ]
+    ],
+    "point_labels": [
+      1,
+      1,
+      1,
+      0,
+      0
+    ]
+  },
+  {
+    "case_id": "new_T24_left_head",
+    "frame_idx": 548,
+    "object_id": 10,
+    "status": "visible",
+    "box": [
+      681,
+      296,
+      767,
+      389
+    ],
+    "points": [
+      [
+        725,
+        344
+      ],
+      [
+        775,
+        350
+      ]
+    ],
+    "point_labels": [
+      1,
+      0
+    ]
+  },
+  {
+    "case_id": "new_T24_left_head",
+    "frame_idx": 548,
+    "object_id": 20,
+    "status": "visible",
+    "box": [
+      431,
+      246,
+      503,
+      390
+    ],
+    "points": [
+      [
+        462,
+        314
+      ],
+      [
+        457,
+        369
+      ],
+      [
+        506,
+        351
+      ]
+    ],
+    "point_labels": [
+      1,
+      1,
+      0
+    ]
+  },
+  {
+    "case_id": "new_T24_left_head",
+    "frame_idx": 548,
+    "object_id": 21,
+    "status": "visible",
+    "box": [
+      295,
+      344,
+      404,
+      425
+    ],
+    "points": [
+      [
+        325,
+        385
+      ],
+      [
+        333,
+        369
+      ],
+      [
+        368,
+        376
+      ]
+    ],
+    "point_labels": [
+      1,
+      1,
+      0
+    ]
+  },
+  {
+    "case_id": "new_T24_left_head",
+    "frame_idx": 598,
+    "object_id": 2,
+    "status": "visible",
+    "box": [
+      91,
+      409,
+      258,
+      552
+    ],
+    "points": [
+      [
+        177,
+        454
+      ],
+      [
+        230,
+        508
+      ],
+      [
+        186,
+        505
+      ]
+    ],
+    "point_labels": [
+      1,
+      1,
+      0
+    ]
+  },
+  {
+    "case_id": "new_T24_left_head",
+    "frame_idx": 598,
+    "object_id": 4,
+    "status": "visible",
+    "box": [
+      573,
+      244,
+      1015,
+      520
+    ],
+    "points": [
+      [
+        648,
+        393
+      ],
+      [
+        869,
+        436
+      ],
+      [
+        914,
+        281
+      ],
+      [
+        724,
+        345
+      ],
+      [
+        992,
+        411
+      ]
+    ],
+    "point_labels": [
+      1,
+      1,
+      1,
+      0,
+      0
+    ]
+  },
+  {
+    "case_id": "new_T24_left_head",
+    "frame_idx": 598,
+    "object_id": 10,
+    "status": "visible",
+    "box": [
+      681,
+      296,
+      767,
+      389
+    ],
+    "points": [
+      [
+        725,
+        344
+      ],
+      [
+        775,
+        350
+      ]
+    ],
+    "point_labels": [
+      1,
+      0
+    ]
+  },
+  {
+    "case_id": "new_T24_left_head",
+    "frame_idx": 598,
+    "object_id": 20,
+    "status": "visible",
+    "box": [
+      450,
+      240,
+      520,
+      390
+    ],
+    "points": [
+      [
+        479,
+        276
+      ],
+      [
+        503,
+        338
+      ],
+      [
+        478,
+        361
+      ],
+      [
+        441,
+        360
+      ]
+    ],
+    "point_labels": [
+      1,
+      1,
+      1,
+      0
+    ]
+  },
+  {
+    "case_id": "new_T24_left_head",
+    "frame_idx": 598,
+    "object_id": 21,
+    "status": "visible",
+    "box": [
+      297,
+      344,
+      402,
+      424
+    ],
+    "points": [
+      [
+        353,
+        382
+      ],
+      [
+        315,
+        389
+      ],
+      [
+        399,
+        386
+      ]
+    ],
+    "point_labels": [
+      1,
+      1,
+      0
+    ]
+  },
+  {
+    "case_id": "new_T24_left_right_wrist",
+    "frame_idx": 548,
+    "object_id": 2,
+    "status": "visible",
+    "box": [
+      103,
+      93,
+      170,
+      130
+    ],
+    "points": [
+      [
+        134,
+        111
+      ],
+      [
+        144,
+        135
+      ]
+    ],
+    "point_labels": [
+      1,
+      0
+    ]
+  },
+  {
+    "case_id": "new_T24_left_right_wrist",
+    "frame_idx": 548,
+    "object_id": 4,
+    "status": "visible",
+    "box": [
+      139,
+      189,
+      423,
+      360
+    ],
+    "points": [
+      [
+        228,
+        259
+      ],
+      [
+        170,
+        223
+      ],
+      [
+        363,
+        285
+      ],
+      [
+        318,
+        327
+      ],
+      [
+        186,
+        305
+      ]
+    ],
+    "point_labels": [
+      1,
+      1,
+      1,
+      0,
+      0
+    ]
+  },
+  {
+    "case_id": "new_T24_left_right_wrist",
+    "frame_idx": 548,
+    "object_id": 10,
+    "status": "visible",
+    "box": [
+      277,
+      278,
+      351,
+      360
+    ],
+    "points": [
+      [
+        315,
+        324
+      ],
+      [
+        356,
+        341
+      ]
+    ],
+    "point_labels": [
+      1,
+      0
+    ]
+  },
+  {
+    "case_id": "new_T24_left_right_wrist",
+    "frame_idx": 548,
+    "object_id": 20,
+    "status": "visible",
+    "box": [
+      217,
+      167,
+      292,
+      216
+    ],
+    "points": [
+      [
+        257,
+        192
+      ],
+      [
+        241,
+        202
+      ],
+      [
+        250,
+        159
+      ]
+    ],
+    "point_labels": [
+      1,
+      1,
+      0
+    ]
+  },
+  {
+    "case_id": "new_T24_left_right_wrist",
+    "frame_idx": 548,
+    "object_id": 21,
+    "status": "visible",
+    "box": [
+      178,
+      137,
+      226,
+      179
+    ],
+    "points": [
+      [
+        203,
+        153
+      ],
+      [
+        195,
+        166
+      ],
+      [
+        228,
+        154
+      ]
+    ],
+    "point_labels": [
+      1,
+      1,
+      0
+    ]
+  },
+  {
+    "case_id": "new_T24_left_right_wrist",
+    "frame_idx": 598,
+    "object_id": 2,
+    "status": "uncertain",
+    "note": "Banana obscured behind opposite forearm; no confident positive seed."
+  },
+  {
+    "case_id": "new_T24_left_right_wrist",
+    "frame_idx": 598,
+    "object_id": 4,
+    "status": "visible",
+    "box": [
+      140,
+      190,
+      418,
+      360
+    ],
+    "points": [
+      [
+        233,
+        255
+      ],
+      [
+        172,
+        226
+      ],
+      [
+        366,
+        277
+      ],
+      [
+        316,
+        325
+      ],
+      [
+        192,
+        309
+      ]
+    ],
+    "point_labels": [
+      1,
+      1,
+      1,
+      0,
+      0
+    ]
+  },
+  {
+    "case_id": "new_T24_left_right_wrist",
+    "frame_idx": 598,
+    "object_id": 10,
+    "status": "visible",
+    "box": [
+      277,
+      278,
+      353,
+      360
+    ],
+    "points": [
+      [
+        315,
+        324
+      ],
+      [
+        362,
+        334
+      ]
+    ],
+    "point_labels": [
+      1,
+      0
+    ]
+  },
+  {
+    "case_id": "new_T24_left_right_wrist",
+    "frame_idx": 598,
+    "object_id": 20,
+    "status": "visible",
+    "box": [
+      215,
+      167,
+      302,
+      218
+    ],
+    "points": [
+      [
+        274,
+        194
+      ],
+      [
+        241,
+        201
+      ],
+      [
+        241,
+        168
+      ]
+    ],
+    "point_labels": [
+      1,
+      1,
+      0
+    ]
+  },
+  {
+    "case_id": "new_T24_left_right_wrist",
+    "frame_idx": 598,
+    "object_id": 21,
+    "status": "uncertain",
+    "note": "Avocado location hidden behind arm; do not propagate absence as GT."
+  }
+]

@@ -1,0 +1,114 @@
+[
+  {
+    "local_frame_idx": 0,
+    "frame_idx": 315,
+    "timestamp": 1785307394.3343484,
+    "prediction_frame": false,
+    "roi_pixels": 93420,
+    "known_pixels": 93420,
+    "unresolved_object_ids": [
+      2,
+      10
+    ],
+    "has_reliable_roi": true,
+    "margin_radius_pixels": 4
+  },
+  {
+    "local_frame_idx": 1,
+    "frame_idx": 316,
+    "timestamp": 1785307394.3687286,
+    "prediction_frame": false,
+    "roi_pixels": 92337,
+    "known_pixels": 92337,
+    "unresolved_object_ids": [
+      2,
+      10
+    ],
+    "has_reliable_roi": true,
+    "margin_radius_pixels": 4
+  },
+  {
+    "local_frame_idx": 2,
+    "frame_idx": 317,
+    "timestamp": 1785307394.4015014,
+    "prediction_frame": false,
+    "roi_pixels": 90726,
+    "known_pixels": 90726,
+    "unresolved_object_ids": [
+      2,
+      10
+    ],
+    "has_reliable_roi": true,
+    "margin_radius_pixels": 4
+  },
+  {
+    "local_frame_idx": 3,
+    "frame_idx": 318,
+    "timestamp": 1785307394.433904,
+    "prediction_frame": false,
+    "roi_pixels": 88552,
+    "known_pixels": 88552,
+    "unresolved_object_ids": [
+      2,
+      10
+    ],
+    "has_reliable_roi": true,
+    "margin_radius_pixels": 4
+  },
+  {
+    "local_frame_idx": 4,
+    "frame_idx": 319,
+    "timestamp": 1785307394.4676056,
+    "prediction_frame": false,
+    "roi_pixels": 86186,
+    "known_pixels": 86186,
+    "unresolved_object_ids": [
+      2,
+      10
+    ],
+    "has_reliable_roi": true,
+    "margin_radius_pixels": 4
+  },
+  {
+    "local_frame_idx": 5,
+    "frame_idx": 320,
+    "timestamp": 1785307394.5012214,
+    "prediction_frame": false,
+    "roi_pixels": 82389,
+    "known_pixels": 82389,
+    "unresolved_object_ids": [
+      2,
+      10
+    ],
+    "has_reliable_roi": true,
+    "margin_radius_pixels": 4
+  },
+  {
+    "local_frame_idx": 6,
+    "frame_idx": 321,
+    "timestamp": 1785307394.5344462,
+    "prediction_frame": false,
+    "roi_pixels": 77773,
+    "known_pixels": 77773,
+    "unresolved_object_ids": [
+      2,
+      10
+    ],
+    "has_reliable_roi": true,
+    "margin_radius_pixels": 4
+  },
+  {
+    "local_frame_idx": 7,
+    "frame_idx": 322,
+    "timestamp": 1785307394.567552,
+    "prediction_frame": false,
+    "roi_pixels": 72487,
+    "known_pixels": 72487,
+    "unresolved_object_ids": [
+      2,
+      10
+    ],
+    "has_reliable_roi": true,
+    "margin_radius_pixels": 4
+  }
+]

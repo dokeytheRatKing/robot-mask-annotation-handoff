@@ -1,0 +1,4 @@
+[
+  {"object_id":1000,"class_name":"robot arm","detailed_text_prompt":"a white mechanical robot arm"},
+  {"object_id":1001,"class_name":"robot gripper","detailed_text_prompt":"a black two-finger robot gripper"}
+]

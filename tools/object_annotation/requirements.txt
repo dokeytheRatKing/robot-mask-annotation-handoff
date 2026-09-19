@@ -1,0 +1,13 @@
+numpy==1.26.4
+transformers==4.40.2
+timm==0.9.16
+supervision==0.22.0
+opencv-python==4.10.0.84
+addict==2.4.0
+yapf==0.40.2
+pycocotools==2.0.8
+pyarrow==17.0.0
+pillow==10.4.0
+ninja==1.11.1.3
+setuptools==75.8.0
+huggingface-hub==0.25.2

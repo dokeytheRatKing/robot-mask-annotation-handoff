@@ -1,0 +1,90 @@
+[
+  {
+    "local_frame_idx": 28,
+    "frame_idx": 146,
+    "timestamp": 1783935788.8606036,
+    "prediction_frame": true,
+    "roi_pixels": 6405,
+    "known_pixels": 230400,
+    "unresolved_object_ids": [],
+    "has_reliable_roi": true,
+    "margin_radius_pixels": 4
+  },
+  {
+    "local_frame_idx": 29,
+    "frame_idx": 147,
+    "timestamp": 1783935788.895665,
+    "prediction_frame": true,
+    "roi_pixels": 7098,
+    "known_pixels": 230400,
+    "unresolved_object_ids": [],
+    "has_reliable_roi": true,
+    "margin_radius_pixels": 4
+  },
+  {
+    "local_frame_idx": 30,
+    "frame_idx": 148,
+    "timestamp": 1783935788.92771,
+    "prediction_frame": true,
+    "roi_pixels": 8674,
+    "known_pixels": 230400,
+    "unresolved_object_ids": [],
+    "has_reliable_roi": true,
+    "margin_radius_pixels": 4
+  },
+  {
+    "local_frame_idx": 31,
+    "frame_idx": 149,
+    "timestamp": 1783935788.9611313,
+    "prediction_frame": true,
+    "roi_pixels": 9189,
+    "known_pixels": 230400,
+    "unresolved_object_ids": [],
+    "has_reliable_roi": true,
+    "margin_radius_pixels": 4
+  },
+  {
+    "local_frame_idx": 32,
+    "frame_idx": 150,
+    "timestamp": 1783935788.9964254,
+    "prediction_frame": true,
+    "roi_pixels": 9791,
+    "known_pixels": 230400,
+    "unresolved_object_ids": [],
+    "has_reliable_roi": true,
+    "margin_radius_pixels": 4
+  },
+  {
+    "local_frame_idx": 33,
+    "frame_idx": 151,
+    "timestamp": 1783935789.0279546,
+    "prediction_frame": true,
+    "roi_pixels": 10035,
+    "known_pixels": 230400,
+    "unresolved_object_ids": [],
+    "has_reliable_roi": true,
+    "margin_radius_pixels": 4
+  },
+  {
+    "local_frame_idx": 34,
+    "frame_idx": 152,
+    "timestamp": 1783935789.061431,
+    "prediction_frame": true,
+    "roi_pixels": 9959,
+    "known_pixels": 230400,
+    "unresolved_object_ids": [],
+    "has_reliable_roi": true,
+    "margin_radius_pixels": 4
+  },
+  {
+    "local_frame_idx": 35,
+    "frame_idx": 153,
+    "timestamp": 1783935789.095877,
+    "prediction_frame": true,
+    "roi_pixels": 9528,
+    "known_pixels": 230400,
+    "unresolved_object_ids": [],
+    "has_reliable_roi": true,
+    "margin_radius_pixels": 4
+  }
+]

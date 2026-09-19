@@ -1,0 +1,22 @@
+{
+  "episode_id":"episode_002478",
+  "reviewer":"Codex visual inspection, 2026-09-16; assisted pilot prompts, not human GT",
+  "identity_policy":"Camera-local components only. Anatomical left/right identity unverified. Export their union as robot_mask.",
+  "seed_source":"explicit RGB-reviewed box and positive/negative points; GroundingDINO robot proposals were unreliable",
+  "components":[
+    {"camera":"head","component_id":"robot_part_a","class_name":"robot arm and gripper","frame_idx":800,
+     "box":[0,470,275,720],"points":[[45,560],[122,614],[105,696],[240,549],[139,510]],"labels":[1,1,1,1,0]},
+    {"camera":"head","component_id":"robot_part_b","class_name":"robot arm and gripper","frame_idx":800,
+     "box":[730,385,1280,720],"points":[[850,420],[795,585],[960,567],[1100,650],[763,490],[650,500]],"labels":[1,1,1,1,0,0]},
+    {"camera":"left_wrist","component_id":"robot_finger_a","class_name":"robot gripper finger","frame_idx":0,
+     "box":[0,268,225,360],"points":[[140,329],[38,349],[280,345]],"labels":[1,1,0]},
+    {"camera":"left_wrist","component_id":"robot_finger_b","class_name":"robot gripper finger","frame_idx":0,
+     "box":[453,259,640,360],"points":[[533,320],[600,345],[425,345]],"labels":[1,1,0]},
+    {"camera":"right_wrist","component_id":"robot_finger_a","class_name":"robot gripper finger","frame_idx":0,
+     "box":[0,268,230,360],"points":[[145,330],[38,349]],"labels":[1,1]},
+    {"camera":"right_wrist","component_id":"robot_finger_b","class_name":"robot gripper finger","frame_idx":0,
+     "box":[450,268,640,360],"points":[[530,326],[610,349]],"labels":[1,1]},
+    {"camera":"right_wrist","component_id":"robot_opposite_arm","class_name":"robot arm and gripper","frame_idx":1000,
+     "box":[0,0,246,137],"points":[[116,33],[172,66],[217,109],[230,123],[124,147]],"labels":[1,1,1,0,0]}
+  ]
+}

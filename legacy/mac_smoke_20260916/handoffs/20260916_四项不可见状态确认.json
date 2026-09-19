@@ -1,0 +1,53 @@
+{
+  "recorded_utc": "2026-09-16T15:00:17.782815+00:00",
+  "user_confirmation": "你标记得完全正确。385、405、407 张的香蕉，以及 400 张的西瓜就是被完全遮挡/没有出现，你标注一下即可。",
+  "interpretation": "fully_occluded; empty visible-surface mask",
+  "recorded_by": "Codex on behalf of Simon",
+  "updates": [
+    {
+      "ui_index": 385,
+      "object_id": 2,
+      "sample_id": "episode_002577_left_wrist_000270",
+      "visibility": "fully_occluded",
+      "revision": 1,
+      "mask_area": 0,
+      "source": "human"
+    },
+    {
+      "ui_index": 400,
+      "object_id": 20,
+      "sample_id": "episode_002577_left_wrist_000345",
+      "visibility": "fully_occluded",
+      "revision": 1,
+      "mask_area": 0,
+      "source": "human"
+    },
+    {
+      "ui_index": 405,
+      "object_id": 2,
+      "sample_id": "episode_002577_right_wrist_000270",
+      "visibility": "fully_occluded",
+      "revision": 1,
+      "mask_area": 0,
+      "source": "human"
+    },
+    {
+      "ui_index": 407,
+      "object_id": 2,
+      "sample_id": "episode_002577_right_wrist_000280",
+      "visibility": "fully_occluded",
+      "revision": 1,
+      "mask_area": 0,
+      "source": "human"
+    }
+  ],
+  "original_78_labels": "unchanged",
+  "revisions": "previous content preserved; appended 4 saves",
+  "status": {
+    "labels": 82,
+    "frames": 420,
+    "required_labels": 1860,
+    "proposals": 1778,
+    "available": 1860
+  }
+}

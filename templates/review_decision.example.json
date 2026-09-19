@@ -1,0 +1,16 @@
+{
+  "schema": "mask_handoff.review.v1",
+  "status": "template_not_reviewed",
+  "clip_id": null,
+  "reviewer_type": "assistant",
+  "source_manifest_sha256": null,
+  "viewed_images": [],
+  "reliable_object_ids": [],
+  "reliable_ee_ids": [],
+  "incomplete_object_ids": [],
+  "reviewed_absent_ids": [],
+  "unknown_intervals": [],
+  "repairs": [],
+  "human_confirmed": false,
+  "notes": "Only fill after actual RGB/context/overlay inspection; this template grants no approval."
+}

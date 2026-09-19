@@ -1,0 +1,24 @@
+{
+  "stage": "post_score_development_repair",
+  "policy": "Keep fixed metrics and frozen comparison outputs. No new independent accuracy claim. Preserve accepted GT and robot layers unchanged.",
+  "events": [
+    {
+      "case_id": "T13_episode_005300_right_wrist", "object_id": 16,
+      "start": 285, "end": 330,
+      "prompt": {"status":"visible","box":[124,157,219,205],"points":[[185,178],[183,192],[144,171],[115,160]],"point_labels":[1,1,1,0]},
+      "reason": "Brush clears the opposite gripper/holder and becomes identifiable; restore the previously UNKNOWN brush track."
+    },
+    {
+      "case_id": "T27_episode_002979_right_wrist", "object_id": 3,
+      "start": 771, "end": 809,
+      "prompt": {"status":"uncertain"},
+      "reason": "Track is on spoon at770, then crosses to spatula by775 and cleaver handle by795. Quarantine the transition and remaining clip to UNKNOWN; this is not a claim that all spoon pixels are absent."
+    },
+    {
+      "case_id": "T27_episode_002979_right_wrist", "object_id": 13,
+      "start": 790, "end": 809,
+      "prompt": {"status":"visible","box":[270,276,364,360],"points":[[309,319],[322,349],[374,342]],"point_labels":[1,1,0]},
+      "reason": "Cleaver re-enters from the lower edge; seed the visible blade under its correct identity."
+    }
+  ]
+}

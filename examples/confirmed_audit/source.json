@@ -1,0 +1,7 @@
+{
+  "source": "annotations/mask_audit_confirmed_20260917",
+  "source_manifest_sha256": "e1fc59587a6362fecc43f1e08729bf23085e99e24a7d3fdcee4b4dbe98ba2f2c",
+  "selection": "Original UI samples 61,143,242; illustrative, not a score subset",
+  "confirmed_labels": 15,
+  "note": "Sample queue PENDING_HUMAN is historical; human_labels carry actual confirmation."
+}

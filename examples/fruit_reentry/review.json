@@ -1,0 +1,58 @@
+{
+  "status": "reviewed_for_bounded_calibration",
+  "reviewer": "assistant_visual_review",
+  "human_confirmed": false,
+  "reliable_object_ids": [
+    4,
+    20,
+    21
+  ],
+  "reliable_ee_ids": [
+    1103,
+    1104
+  ],
+  "reviewed_absent_ids": [],
+  "exclude_ids": [],
+  "note": "Basket track switches to held avocado early. Add distinct basket/avocado seeds315 and watermelon395; repaired intervals required.",
+  "reviewed_frames": [
+    315,
+    335,
+    355,
+    363,
+    375,
+    395
+  ],
+  "evidence_sha256": "be54091394b1a94c40f71bbb13e3b4e47d390957878790119dbb0f2ff6b71f2d",
+  "review_scope": "Sparse temporal visual review plus all-frame engineering checks; not pixel GT",
+  "repair_objects": "repairs_v2/C050_T24_episode_002563_right_wrist/objects.jsonl.gz",
+  "repair_objects_sha256": "f5acb08109cb0d03857947ac27e3d56f3735b6e0ee20ab22ad5a7a852e4446f8",
+  "repair_review": {
+    "reliable_object_ids": [
+      4,
+      20,
+      21
+    ],
+    "repair_folder": "repairs_v2",
+    "note": "Two extra re-entry seeds at395 recover basket separately from avocado crescent after placement. Eight rendered checkpoints inspected; previous basket-to-avocado and avocado-to-basket identity drift corrected.",
+    "output_sha256": "f5acb08109cb0d03857947ac27e3d56f3735b6e0ee20ab22ad5a7a852e4446f8",
+    "reviewed_frames": [
+      315,
+      328,
+      341,
+      355,
+      363,
+      368,
+      381,
+      395
+    ],
+    "evidence_sha256": {
+      "qa_0.jpg": "b54f4123111a84aaeaa6ea757f439de28afc0e53d992f61dc67f91e2aae87df8",
+      "qa_1.jpg": "a34b14c8641d7e3d40c803cb149d95beadce0a45a1629a02db8e6d18bb65d9cb"
+    },
+    "human_confirmed": false,
+    "reviewer": "assistant_visual_review",
+    "scope": "All rendered repair check frames inspected, not every pixel/frame."
+  },
+  "frame_exclusions": [],
+  "incomplete_object_ids": []
+}

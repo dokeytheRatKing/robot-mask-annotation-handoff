@@ -1,0 +1,224 @@
+[
+  {
+    "case_id": "head_banana",
+    "object_id": 2,
+    "frame_idx": 0,
+    "prompt": {
+      "frame_idx": 0,
+      "status": "visible",
+      "box": [
+        91,
+        401,
+        245,
+        518
+      ],
+      "points": [
+        [
+          145,
+          434
+        ],
+        [
+          193,
+          464
+        ],
+        [
+          219,
+          493
+        ],
+        [
+          253,
+          485
+        ],
+        [
+          227,
+          551
+        ]
+      ],
+      "point_labels": [
+        1,
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    "mask": {
+      "format": "coco_rle",
+      "size": [
+        720,
+        1280
+      ],
+      "counts": "lmS26Vf06M2N1O1O101OO010O1O010O0010O0100O0100O010O100O1O1O001O2N1O1O1O1O1O1O2N100O2O0O101N1000000O2O00001O00001O0000001O0000001O00001O01O01O000010O01O0010O0100O1O010O1O100O010O1O100O00100O2O0O100O2O1N101N1O2O0O2O0O2N3N2N1O1N104K2O1O00O010O1N101O1N2O0O2N2O1N2N2N2N2M3N2N2N2N2N3M2N2J6F:J7L3M3M3Ncijf0"
+    },
+    "bbox_xyxy": [
+      96,
+      412,
+      240,
+      515
+    ],
+    "mask_area": 6123,
+    "visible": true,
+    "mask_status": "predicted",
+    "human_confirmed": false,
+    "sam_predicted_iou": 0.9296875,
+    "rgb_sha256": "ccd36f16664444465caf03c94c23913fb1c206bf7024bf61bdf04d56d99dbe3d"
+  },
+  {
+    "case_id": "right_banana_occlusion",
+    "object_id": 2,
+    "frame_idx": 630,
+    "prompt": {
+      "frame_idx": 630,
+      "status": "visible",
+      "box": [
+        104,
+        89,
+        178,
+        129
+      ],
+      "points": [
+        [
+          139,
+          111
+        ],
+        [
+          164,
+          107
+        ],
+        [
+          117,
+          136
+        ]
+      ],
+      "point_labels": [
+        1,
+        1,
+        0
+      ]
+    },
+    "mask": {
+      "format": "coco_rle",
+      "size": [
+        360,
+        640
+      ],
+      "counts": "ZRV19n:2N2O1N2O001N101O001O000O2O00001O00001O000000000000001O00000000000000000O2O00000O0L5O11O0000001O000O101O000O100O100O2N101M2O2N2K5L5JU\\S5"
+    },
+    "bbox_xyxy": [
+      108,
+      93,
+      175,
+      127
+    ],
+    "mask_area": 1565,
+    "visible": true,
+    "mask_status": "predicted",
+    "human_confirmed": false,
+    "sam_predicted_iou": 0.953125,
+    "rgb_sha256": "86c8459bff71ddaa1aca71230efd5fb90ad2a2561dc79e5fc0f6dcc405ace9ea"
+  },
+  {
+    "case_id": "right_banana_occlusion",
+    "object_id": 2,
+    "frame_idx": 650,
+    "prompt": {
+      "frame_idx": 650,
+      "status": "not_visible",
+      "note": "Robot occludes banana; clear to UNKNOWN, not a negative interval."
+    },
+    "mask": {
+      "format": "coco_rle",
+      "size": [
+        360,
+        640
+      ],
+      "counts": "PPQ7"
+    },
+    "bbox_xyxy": null,
+    "mask_area": 0,
+    "visible": false,
+    "mask_status": "predicted_empty",
+    "human_confirmed": false,
+    "sam_predicted_iou": null,
+    "rgb_sha256": "fd6aaea9fee8bcc7ef0ea288d2c5263934fb764e49d778832d80b2cc800c25cd"
+  },
+  {
+    "case_id": "right_banana_occlusion",
+    "object_id": 2,
+    "frame_idx": 710,
+    "prompt": {
+      "frame_idx": 710,
+      "status": "visible",
+      "box": [
+        108,
+        75,
+        180,
+        111
+      ],
+      "points": [
+        [
+          148,
+          92
+        ],
+        [
+          126,
+          90
+        ],
+        [
+          188,
+          100
+        ]
+      ],
+      "point_labels": [
+        1,
+        1,
+        0
+      ]
+    },
+    "mask": {
+      "format": "coco_rle",
+      "size": [
+        360,
+        640
+      ],
+      "counts": "aSW14Q;7K2N101N2O0O2O00001O001O00001O00001O000000001O00000000000000001O00000O10000O100O1N200O100000O100000000O10000O2O0O101N1O2M3L4K6JaQS5"
+    },
+    "bbox_xyxy": [
+      111,
+      76,
+      176,
+      107
+    ],
+    "mask_area": 1504,
+    "visible": true,
+    "mask_status": "predicted",
+    "human_confirmed": false,
+    "sam_predicted_iou": 0.9453125,
+    "rgb_sha256": "e05ee62fd0dca42875e0d0c12b8b76c53411879f4c21001225c61a0f8fcef6b0"
+  },
+  {
+    "case_id": "right_watermelon_drift",
+    "object_id": 20,
+    "frame_idx": 880,
+    "prompt": {
+      "frame_idx": 880,
+      "status": "not_visible",
+      "note": "No visible watermelon; later cup stand must not inherit its identity. Future frames remain UNKNOWN."
+    },
+    "mask": {
+      "format": "coco_rle",
+      "size": [
+        360,
+        640
+      ],
+      "counts": "PPQ7"
+    },
+    "bbox_xyxy": null,
+    "mask_area": 0,
+    "visible": false,
+    "mask_status": "predicted_empty",
+    "human_confirmed": false,
+    "sam_predicted_iou": null,
+    "rgb_sha256": "4889329ae6e9383cc13e133cf90843462fe7b772e9f5e89d3456d20ce6e2fa60"
+  }
+]

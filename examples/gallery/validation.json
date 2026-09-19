@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "clip_frames": 16,
+  "released_rows": 80,
+  "null_unknown_rows": 40,
+  "exact_confirmed_example_labels": 15,
+  "roi_reconstruction": true,
+  "gpu_used": false,
+  "meaning": "Engineering example validation; no new semantic or human acceptance"
+}

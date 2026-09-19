@@ -1,0 +1,86 @@
+{
+  "T05_episode_003916_head": {
+    "0": {"5":{"status":"visible","box":[258,123,337,220],"points":[[304,156],[281,202]],"point_labels":[1,1]}},
+    "45": {"5":{"status":"visible","box":[258,124,337,220],"points":[[304,157],[281,202],[246,230]],"point_labels":[1,1,0]}}
+  },
+  "T05_episode_003900_left_wrist": {
+    "59": {"5":{"status":"visible","box":[216,204,399,360],"points":[[293,258],[346,330],[196,319]],"point_labels":[1,1,0]}},
+    "104": {"5":{"status":"visible","box":[241,191,424,360],"points":[[326,241],[345,325],[299,311],[392,309]],"point_labels":[1,1,0,0]}}
+  },
+  "T05_episode_003900_right_wrist": {
+    "59": {"5":{"status":"not_visible","reason":"Only grippers, basket edge and drying rack visible; pan outside view."}},
+    "104": {"5":{"status":"not_visible","reason":"No pan pixels visible."}}
+  },
+  "T13_episode_000528_head": {
+    "420": {
+      "1":{"status":"visible","box":[284,168,370,272],"points":[[310,235],[311,185],[349,230]],"point_labels":[1,1,0]},
+      "16":{"status":"visible","box":[141,167,230,247],"points":[[207,190],[163,225],[141,223]],"point_labels":[1,1,0]}
+    },
+    "465": {
+      "1":{"status":"visible","box":[320,166,405,273],"points":[[385,233],[351,190],[363,249]],"point_labels":[1,1,0]},
+      "16":{"status":"visible","box":[188,171,235,235],"points":[[216,197],[201,218],[181,222]],"point_labels":[1,1,0]}
+    }
+  },
+  "T13_episode_000628_left_wrist": {
+    "180": {
+      "1":{"status":"visible","box":[318,249,368,360],"points":[[343,288],[346,341],[306,318],[383,319]],"point_labels":[1,1,0,0]},
+      "16":{"status":"not_visible","reason":"Brush absent from field of view."}
+    },
+    "225": {
+      "1":{"status":"visible","box":[319,249,368,360],"points":[[343,288],[346,341],[306,318],[383,319]],"point_labels":[1,1,0,0]},
+      "16":{"status":"not_visible","reason":"Brush absent from field of view."}
+    }
+  },
+  "T13_episode_005300_right_wrist": {
+    "210": {
+      "1":{"status":"visible","box":[320,216,376,360],"points":[[347,263],[352,331],[302,318],[390,317]],"point_labels":[1,1,0,0]},
+      "16":{"status":"uncertain","reason":"Small pale patch by opposite gripper and utensil holder; identity/boundary not secure from this anchor."}
+    },
+    "255": {
+      "1":{"status":"visible","box":[320,216,378,360],"points":[[347,263],[351,331],[302,318],[390,317]],"point_labels":[1,1,0,0]},
+      "16":{"status":"uncertain","reason":"Opposite gripper occludes brush/holder boundary. Abstain rather than seed gripper or holder."}
+    }
+  },
+  "T27_episode_002899_head": {
+    "330": {
+      "3":{"status":"visible","box":[168,132,192,219],"points":[[178,148],[176,207]],"point_labels":[1,1]},
+      "12":{"status":"visible","box":[367,105,433,228],"points":[[389,150],[416,208],[400,213]],"point_labels":[1,1,0]},
+      "13":{"status":"visible","box":[248,132,319,192],"points":[[298,153],[277,171],[260,190]],"point_labels":[1,1,0]},
+      "19":{"status":"visible","box":[200,133,237,210],"points":[[220,149],[210,183],[216,207]],"point_labels":[1,1,0]}
+    },
+    "375": {
+      "3":{"status":"visible","box":[167,134,192,208],"points":[[178,150],[175,184],[166,201]],"point_labels":[1,1,0]},
+      "12":{"status":"visible","box":[358,106,425,230],"points":[[374,144],[409,211],[390,215]],"point_labels":[1,1,0]},
+      "13":{"status":"visible","box":[244,138,319,193],"points":[[297,160],[264,181]],"point_labels":[1,1]},
+      "19":{"status":"visible","box":[199,133,236,210],"points":[[220,150],[208,191],[195,222]],"point_labels":[1,1,0]}
+    }
+  },
+  "T27_episode_002979_left_wrist": {
+    "419": {
+      "3":{"status":"visible","box":[518,93,618,138],"points":[[539,111],[579,122],[613,141]],"point_labels":[1,1,0]},
+      "12":{"status":"visible","box":[285,76,405,360],"points":[[355,141],[344,285],[394,302],[276,324]],"point_labels":[1,1,0,0]},
+      "13":{"status":"visible","box":[554,57,640,90],"points":[[593,73]],"point_labels":[1]},
+      "19":{"status":"visible","box":[426,151,575,201],"points":[[470,178],[537,177],[586,173]],"point_labels":[1,1,0]}
+    },
+    "464": {
+      "3":{"status":"visible","box":[518,94,615,143],"points":[[539,116],[580,128],[619,148]],"point_labels":[1,1,0]},
+      "12":{"status":"visible","box":[285,76,405,360],"points":[[355,143],[343,287],[401,309],[276,324]],"point_labels":[1,1,0,0]},
+      "13":{"status":"visible","box":[558,64,625,95],"points":[[584,80],[622,76]],"point_labels":[1,0]},
+      "19":{"status":"visible","box":[440,164,640,228],"points":[[479,189],[580,210]],"point_labels":[1,1]}
+    }
+  },
+  "T27_episode_002979_right_wrist": {
+    "689": {
+      "3":{"status":"visible","box":[302,162,381,360],"points":[[340,195],[343,248],[347,324],[300,323],[385,320]],"point_labels":[1,1,1,0,0]},
+      "12":{"status":"visible","box":[0,30,295,146],"points":[[208,62],[233,94],[51,54],[16,111]],"point_labels":[1,1,1,0]},
+      "13":{"status":"not_visible","reason":"No cleaver visible."},
+      "19":{"status":"not_visible","reason":"No spatula visible."}
+    },
+    "734": {
+      "3":{"status":"visible","box":[302,161,381,360],"points":[[340,195],[343,248],[347,324],[300,323],[385,320]],"point_labels":[1,1,1,0,0]},
+      "12":{"status":"not_visible","reason":"Cleaning tool exited upper-left view."},
+      "13":{"status":"visible","box":[607,279,640,339],"points":[[631,306]],"point_labels":[1]},
+      "19":{"status":"visible","box":[80,173,283,360],"points":[[234,213],[198,258],[129,328],[192,348]],"point_labels":[1,1,1,0]}
+    }
+  }
+}

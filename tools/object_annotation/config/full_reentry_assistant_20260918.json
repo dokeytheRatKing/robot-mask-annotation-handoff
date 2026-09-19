@@ -1,0 +1,37 @@
+[
+  {"episode":1662,"camera":"left_wrist","frame":0,"clear":[1],"note":"No visible kettle in initial wrist frame; automatic seed is on a gripper."},
+  {"episode":1662,"camera":"right_wrist","frame":0,"clear":[1],"note":"No identifiable kettle; pan and grippers are not the target."},
+  {"episode":1662,"camera":"left_wrist","frame":100,"visible":{"1":{"box":[325,222,381,360],"points":[[350,268],[355,322],[315,319],[393,307]],"point_labels":[1,1,0,0]}}},
+  {"episode":1662,"camera":"left_wrist","frame":220,"clear":[1],"note":"Kettle put down outside current wrist field of view."},
+  {"episode":2503,"camera":"left_wrist","frame":0,"clear":[2,4,10,20,21],"note":"Initial view contains tools and robot fingers, not task24 objects."},
+  {"episode":2503,"camera":"right_wrist","frame":0,"clear":[2,4,10,20,21],"note":"Initial cutting board is not basket/watermelon; robot fingers are not avocado."},
+  {"episode":2503,"camera":"left_wrist","frame":240,"visible":{
+    "20":{"box":[306,309,397,360],"points":[[333,342],[377,329],[294,340]],"point_labels":[1,0,0]},
+    "4":{"box":[480,258,640,322],"points":[[563,285],[619,292],[528,327]],"point_labels":[1,1,0]}}},
+  {"episode":2503,"camera":"left_wrist","frame":360,"visible":{
+    "4":{"box":[433,174,640,311],"points":[[540,238],[496,209],[627,260],[519,331]],"point_labels":[1,1,1,0]},
+    "10":{"box":[309,266,506,360],"points":[[399,316],[447,348],[302,324],[501,318]],"point_labels":[1,1,0,0]},
+    "20":{"box":[270,162,416,305],"points":[[329,228],[396,244],[352,279],[432,252]],"point_labels":[1,1,1,0]},
+    "21":{"box":[77,219,244,303],"points":[[177,253],[101,266],[212,276],[184,322]],"point_labels":[1,1,1,0]}},"clear":[2]},
+  {"episode":2503,"camera":"left_wrist","frame":480,"clear":[2,20,21],"uncertain":[10],"visible":{
+    "4":{"box":[214,296,477,360],"points":[[260,337],[434,345],[348,303],[484,315]],"point_labels":[1,1,0,0]}},"note":"Near-contact bright blur is unresolved peach; do not make a confident negative label."},
+  {"episode":2503,"camera":"left_wrist","frame":600,"visible":{
+    "20":{"box":[302,179,388,360],"points":[[345,229],[354,301],[362,350],[278,292],[405,320]],"point_labels":[1,1,1,0,0]},
+    "21":{"box":[0,301,166,360],"points":[[65,329],[23,350],[121,347],[169,306]],"point_labels":[1,1,1,0]}}},
+  {"episode":2503,"camera":"left_wrist","frame":840,"clear":[2,4,10,20],"visible":{
+    "21":{"box":[266,262,430,360],"points":[[325,309],[392,300],[390,349],[255,321],[445,304]],"point_labels":[1,1,1,0,0],
+          "components":[{"box":[274,268,373,360],"points":[[325,309],[301,302],[327,339],[386,319],[262,318]],"point_labels":[1,1,1,0,0]}]}}},
+  {"episode":2503,"camera":"left_wrist","frame":960,"clear":[4,10,20,21],"visible":{
+    "2":{"box":[224,222,403,360],"points":[[304,259],[358,306],[371,349],[256,316],[410,301]],"point_labels":[1,1,1,0,0]}}},
+  {"episode":2503,"camera":"right_wrist","frame":90,"visible":{
+    "4":{"box":[332,77,640,360],"points":[[447,185],[367,300],[596,236],[545,320]],"point_labels":[1,1,1,0]}}},
+  {"episode":2503,"camera":"right_wrist","frame":360,"visible":{
+    "2":{"box":[122,111,181,143],"points":[[159,127],[140,125],[134,148]],"point_labels":[1,1,0]},
+    "10":{"box":[127,176,197,230],"points":[[153,214],[177,213],[160,189]],"point_labels":[1,1,0]},
+    "20":{"box":[215,190,294,244],"points":[[255,216],[233,213],[301,222]],"point_labels":[1,1,0]},
+    "21":{"box":[180,154,230,201],"points":[[206,174],[199,182],[238,177]],"point_labels":[1,1,0]}}},
+  {"episode":2503,"camera":"right_wrist","frame":618,"visible":{
+    "2":{"box":[107,100,176,132],"points":[[143,115],[124,113],[154,137]],"point_labels":[1,1,0]},
+    "21":{"box":[180,141,231,182],"points":[[204,155],[195,163],[231,156]],"point_labels":[1,1,0]}},"note":"Both targets reappear after the prior frame598 clear; inspect nonseed frames638/668 separately."},
+  {"episode":2503,"camera":"right_wrist","frame":1140,"clear":[2,4,10,20,21],"note":"Camera faces curtain after arm retreats; no target pixels visible."}
+]

@@ -1,0 +1,22 @@
+{
+  "cases": [
+    {"case_id":"head_banana", "source_case":"episode_002503_head", "object_id":2, "start":0, "end":547,
+     "prompts":[{"frame_idx":0,"status":"visible","box":[91,401,245,518],"points":[[145,434],[193,464],[219,493],[253,485],[227,551]],"point_labels":[1,1,1,0,0]}],
+     "checks":[15,60,120,180,300,420,480,540,547],
+     "reason":"Initial banana includes gripper, then follows the moving gripper."},
+    {"case_id":"right_banana_occlusion", "source_case":"episode_002503_right_wrist", "object_id":2,"start":630,"end":790,
+     "prompts":[
+       {"frame_idx":630,"status":"visible","box":[104,89,178,129],"points":[[139,111],[164,107],[117,136]],"point_labels":[1,1,0]},
+       {"frame_idx":650,"status":"not_visible","note":"Robot occludes banana; clear to UNKNOWN, not a negative interval."},
+       {"frame_idx":710,"status":"visible","box":[108,75,180,111],"points":[[148,92],[126,90],[188,100]],"point_labels":[1,1,0]}],
+     "checks":[638,645,660,668,680,700,720,740,748,760,780,790],
+     "reason":"Occluded banana leaves high-confidence residual on robot; explicitly re-seed on reappearance."},
+    {"case_id":"right_watermelon_drift", "source_case":"episode_002503_right_wrist", "object_id":20,"start":880,"end":1139,
+     "prompts":[{"frame_idx":880,"status":"not_visible","note":"No visible watermelon; later cup stand must not inherit its identity. Future frames remain UNKNOWN."}],
+     "checks":[898,920,960,1008,1040,1080,1120,1139],
+     "reason":"Stale watermelon track reacquires background cup stand after target leaves visible area."}
+  ],
+  "human_confirmed":false,
+  "new_human_requests":0,
+  "policy":"Only listed target and frame interval may change. Other objects and all outside frames retain exact parent records. No robot subtraction. Assistant absence decisions clear to UNKNOWN."
+}

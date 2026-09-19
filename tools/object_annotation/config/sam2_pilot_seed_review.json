@@ -1,0 +1,9 @@
+{
+  "episode_id":"episode_002478",
+  "reviewer":"Codex visual inspection of RGB and candidate overlays, 2026-09-16; not a human ground-truth audit",
+  "head":{"2":0,"4":0,"10":0,"20":0,"21":0},
+  "left_wrist":{"2":565,"4":565,"10":620,"20":450},
+  "right_wrist":{"2":1080,"4":1030,"10":960,"20":955,"21":1075},
+  "unseeded":{"left_wrist":[21]},
+  "notes":"Head frame 0 clearly shows all five objects. Wrist boxes are partly clipped/occluded but correspond to the intended objects. Reject highest-score left-wrist peach (actually avocado pit), watermelon (actually peach), avocado (actually gripper). No verified left-wrist avocado seed available; do not fabricate one."
+}

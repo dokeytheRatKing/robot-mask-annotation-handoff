@@ -1,0 +1,29 @@
+{
+  "sample_id": "episode_002478_right_wrist_000475",
+  "episode_id": "episode_002478",
+  "camera": "right_wrist",
+  "frame_idx": 475,
+  "object_id": 21,
+  "instance_id": "avocado_1",
+  "visibility": "partial_occlusion",
+  "conditions": [
+    "partial_occlusion",
+    "similar_objects_near"
+  ],
+  "mask": {
+    "format": "coco_rle",
+    "size": [
+      360,
+      640
+    ],
+    "counts": "a_>1W;3L3N3M2N2N3M2N2N2M101N100O2N101N100O2O00001O00001O00InEXOS:e0QFYOo9e0<M3M3N101O1O1O1N2M3M4MSST6"
+  },
+  "annotator": "Simon",
+  "human_confirmed": true,
+  "annotation_method": "manual_pixel_editor",
+  "prediction_prefill": false,
+  "source_image_sha256": "271cea06cb6fe6345fb68fd37f5a89bc0a357978fe8905178a1d328cc17f6312",
+  "notes": "",
+  "saved_utc": "2026-09-16T11:48:41.294016+00:00",
+  "revision": 1
+}

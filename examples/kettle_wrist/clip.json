@@ -1,0 +1,88 @@
+{
+  "schema": "mask_handoff.clip.v1",
+  "clip_id": "C001_T01_episode_001608_right_wrist__example",
+  "source_clip_id": "C001_T01_episode_001608_right_wrist",
+  "episode_id": "episode_001608",
+  "task_id": 1,
+  "camera": "right_wrist",
+  "image_shape": [
+    360,
+    640
+  ],
+  "frames": [
+    {
+      "local_frame_idx": 0,
+      "source_frame_idx": 146,
+      "timestamp": 1783935788.8606036,
+      "image": "rgb/00000.png",
+      "image_sha256": "4f5a5273be02b15f31b2fb33d636216a5e384e6a5b38cb86d5e357dbce3e050d",
+      "source_image_local_frame_idx": 28
+    },
+    {
+      "local_frame_idx": 1,
+      "source_frame_idx": 147,
+      "timestamp": 1783935788.895665,
+      "image": "rgb/00001.png",
+      "image_sha256": "444ddd0fe7ea998eb0cbdf7533f263a85904d88612fd2032ee02956e36ab64d5",
+      "source_image_local_frame_idx": 29
+    },
+    {
+      "local_frame_idx": 2,
+      "source_frame_idx": 148,
+      "timestamp": 1783935788.92771,
+      "image": "rgb/00002.png",
+      "image_sha256": "540017c259473f0ec1e55d9d101e98641615cb11f705be9db9b8e38abb67c511",
+      "source_image_local_frame_idx": 30
+    },
+    {
+      "local_frame_idx": 3,
+      "source_frame_idx": 149,
+      "timestamp": 1783935788.9611313,
+      "image": "rgb/00003.png",
+      "image_sha256": "63d71b1fffc07f1abac7de2e26fc7d7df9369dcc912a46cccf29bd521106b930",
+      "source_image_local_frame_idx": 31
+    },
+    {
+      "local_frame_idx": 4,
+      "source_frame_idx": 150,
+      "timestamp": 1783935788.9964254,
+      "image": "rgb/00004.png",
+      "image_sha256": "3b04e11d76fc65f4972137b31c161b0e7de06578c76a314036c8e1080aac0fc2",
+      "source_image_local_frame_idx": 32
+    },
+    {
+      "local_frame_idx": 5,
+      "source_frame_idx": 151,
+      "timestamp": 1783935789.0279546,
+      "image": "rgb/00005.png",
+      "image_sha256": "cccad83deff251e1af7fe86b2cd3a195eedaadfd46ed3510b086c33e8b5b692c",
+      "source_image_local_frame_idx": 33
+    },
+    {
+      "local_frame_idx": 6,
+      "source_frame_idx": 152,
+      "timestamp": 1783935789.061431,
+      "image": "rgb/00006.png",
+      "image_sha256": "fcc01f009abe8ba8ae4d340608973a5ee3aaebb80b44860add31d76342f509ad",
+      "source_image_local_frame_idx": 34
+    },
+    {
+      "local_frame_idx": 7,
+      "source_frame_idx": 153,
+      "timestamp": 1783935789.095877,
+      "image": "rgb/00007.png",
+      "image_sha256": "7f55083a7df9d60df479bbcc03735440a338cc95a2c5f5f4b92711af23612414",
+      "source_image_local_frame_idx": 35
+    }
+  ],
+  "object_ids": [
+    1
+  ],
+  "provenance": {
+    "source_manifest_sha256": "d355cf571469befb3120388daee648ae32d8394d992ff69c4ad0cd1b4aa509f8",
+    "object_release_sha256": "60e1fae43d78701518424927d5cbfdcf0bdd4d5ed7711e984bf8cb9324fda27b",
+    "robot_release_sha256": "c844e403fd3d17644c4870a107bea3e26d219574614bd23296aedb24ccf5035f",
+    "purpose": "Small illustrative crop in time; assistant-reviewed pseudo-labels are not new human GT",
+    "source_set": "Astribot real-robot data, not RoboTwin"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "sample_id": "episode_002478_right_wrist_000475",
+  "episode_id": "episode_002478",
+  "camera": "right_wrist",
+  "frame_idx": 475,
+  "object_id": 2,
+  "instance_id": "banana_1",
+  "visibility": "visible",
+  "conditions": [
+    "normal_unoccluded"
+  ],
+  "mask": {
+    "format": "coco_rle",
+    "size": [
+      360,
+      640
+    ],
+    "counts": "aW_14S;9G5K2N1O2N2N2N2N2O1iEROR:R1O100000000O10ITFROl9m08N1O2N2O1O101O00000000001O000000010O00000000001O1O1O001O1O001O1O10O01O1N2M2N3MfPm4"
+  },
+  "annotator": "Simon",
+  "human_confirmed": true,
+  "annotation_method": "manual_pixel_editor",
+  "prediction_prefill": false,
+  "source_image_sha256": "271cea06cb6fe6345fb68fd37f5a89bc0a357978fe8905178a1d328cc17f6312",
+  "notes": "",
+  "saved_utc": "2026-09-16T11:46:22.007232+00:00",
+  "revision": 1
+}

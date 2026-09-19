@@ -1,0 +1,16 @@
+{
+  "schema": "mask_handoff.task_registry.v1",
+  "dataset_revision": null,
+  "task_config": null,
+  "status": "template_requires_actual_robotwin_task_mapping",
+  "objects": [],
+  "robot_parts": [],
+  "cameras": [],
+  "actor_id_mapping": [],
+  "policy": {
+    "surface": "visible_pixels",
+    "unknown_is_background": false,
+    "subtract_robot_from_objects": false,
+    "reuse_astribot_class_ids_automatically": false
+  }
+}

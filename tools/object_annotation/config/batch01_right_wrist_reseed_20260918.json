@@ -1,0 +1,11 @@
+{
+  "case_id": "T24_right_wrist",
+  "visual_author": "assistant RGB inspection 2026-09-18; not human-confirmed GT",
+  "keyframes": [
+    {"frame_idx": 333, "object_id": 4, "box": [0, 254, 164, 359], "points": [[55, 305], [105, 282], [325, 305]], "point_labels": [1, 1, 0]},
+    {"frame_idx": 333, "object_id": 21, "box": [289, 251, 412, 359], "points": [[335, 305], [380, 290], [268, 305], [425, 310]], "point_labels": [1, 1, 0, 0], "components": [{"box": [285, 260, 375, 355], "points": [[320, 291], [338, 321], [392, 301], [272, 294]], "point_labels": [1, 1, 0, 0], "reason": "Visible brown pit is part of the toy avocado; primary SAM proposal omitted it."}]},
+    {"frame_idx": 333, "object_id": 20, "absent": true},
+    {"frame_idx": 393, "object_id": 4, "box": [0, 0, 152, 195], "points": [[65, 145], [60, 55], [199, 109]], "point_labels": [1, 1, 0]},
+    {"frame_idx": 393, "object_id": 20, "box": [323, 192, 498, 359], "points": [[383, 270], [403, 330], [529, 313]], "point_labels": [1, 1, 0]}
+  ]
+}

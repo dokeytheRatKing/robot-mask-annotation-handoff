@@ -1,0 +1,24 @@
+{
+  "schema": "mask_handoff.seeds.v1",
+  "clip_id": "C001_T01_episode_001608_right_wrist__example",
+  "reviewed_example": true,
+  "seeds": [
+    {
+      "local_frame_idx": 4,
+      "source_frame_idx": 150,
+      "object_id": 1,
+      "mask": {
+        "format": "coco_rle",
+        "size": [
+          360,
+          640
+        ],
+        "counts": "Wc0Y2Y7SNQJm1n5gN_IX1b6hN^IW1c6iN]IW1c6iN]IV1d6jN]IU1c6kN]IT1d6lN\\IT1d6lN\\IS1e6mN[IS1e6mN[IR1f6nNZIR1f6nNZIQ1g6oNZIP1f6oN[IP1f6oN[IQ1e6nN\\IQ1e6nN`In0`6QOcIl0^6SOdIl0\\6SOfIk0[6TOfIk0[6UOfIj0[6TOgIj0Z6UOhIj0X6UOiIj0Y6UOgIk0Y6UOgIj0Z6WOeIi0\\6VOdIi0]6XO`Ij0`6VO^Ik0d6UOXIn0h6ROVIo0k6QOSIQ1n6oNoHS1Q7mNlHW1S7lNhHV1Y7\\1000010O0001O0010O0001O01O01O000010O0001O00010O000a0@O0TN_H1a7LcH2_7JeH5[7IiH5W7HmH7T7EPI:P7CTI<l6BWI<k6@ZI>f6_O^I`0b6^OaIa0`6[OdId0\\6YOhIe0[6WOiIg0[6ROiIm0[6lNiIS1W8O1O1N2O1O1O1O1N2O1O1G9N2O1N2O1N2O1N2O1O1NXTl5"
+      },
+      "source_image_sha256": "3b04e11d76fc65f4972137b31c161b0e7de06578c76a314036c8e1080aac0fc2",
+      "human_confirmed": true,
+      "source": "copied released example mask; inspect before using on new data"
+    }
+  ],
+  "human_confirmation_inherited_only_for_exact_seed_pixels": true
+}

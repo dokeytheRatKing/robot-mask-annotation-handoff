@@ -1,0 +1,5 @@
+numpy==1.26.4
+pillow==10.4.0
+opencv-python==4.10.0.84
+pycocotools==2.0.8
+h5py==3.11.0

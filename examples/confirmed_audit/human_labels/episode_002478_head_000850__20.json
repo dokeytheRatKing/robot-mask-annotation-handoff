@@ -1,0 +1,28 @@
+{
+  "sample_id": "episode_002478_head_000850",
+  "episode_id": "episode_002478",
+  "camera": "head",
+  "frame_idx": 850,
+  "object_id": 20,
+  "instance_id": "watermelon_slice_1",
+  "visibility": "visible",
+  "conditions": [
+    "normal_unoccluded"
+  ],
+  "mask": {
+    "format": "coco_rle",
+    "size": [
+      720,
+      1280
+    ],
+    "counts": "]aS?2\\f05L4L4K5[ZO]OVe0g0gZOYOXe0k045J2O1O1N2O1O1O1N2O1O1N2O001N2O1N2O1O1N2O1N2O1O1N101N2O1N2O1O1N2O1N2O1O10O010000O10000O1000000O10O10O10000O10000O1000000O01000O10000O10000O100000O010000O10000O1001O00000O10001O000000001O0000000O2O00000000001O000000001N100000001O00000000001O0O1000001O000000001O00000O101O001O1O1O1O1O1O1O1O1O1N101O1O1O1O1O1O1O1O1O1O1N101O1O1O1O1O1O1O6J7I7I6I8I7IkbR9"
+  },
+  "annotator": "Simon",
+  "human_confirmed": true,
+  "annotation_method": "manual_pixel_editor",
+  "prediction_prefill": false,
+  "source_image_sha256": "4143bee7032decef3bc83d4749a418cb962230e1d5317c383adbcdd0a51df8d5",
+  "notes": "",
+  "saved_utc": "2026-09-16T11:23:19.662452+00:00",
+  "revision": 1
+}

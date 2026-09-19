@@ -1,0 +1,22 @@
+{
+  "status": "reviewed_for_bounded_calibration",
+  "reviewer": "assistant_visual_review",
+  "human_confirmed": false,
+  "reliable_object_ids": [
+    1
+  ],
+  "reliable_ee_ids": [],
+  "reviewed_absent_ids": [],
+  "exclude_ids": [],
+  "note": "Partial kettle at left image edge, disappears; dense accepted seeds retained; uncertain gaps remain unknown.",
+  "reviewed_frames": [
+    118,
+    130,
+    142,
+    150,
+    154,
+    166
+  ],
+  "evidence_sha256": "8a93443012edf2b90d458e6c35c8c77647fcb0d3da61927111c8cfc31be4b6f9",
+  "review_scope": "Sparse temporal visual review plus all-frame engineering checks; not pixel GT"
+}

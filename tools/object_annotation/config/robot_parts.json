@@ -1,0 +1,18 @@
+{
+  "schema": "astribot.robot_parts.v1",
+  "parts": {"1101": "left_arm", "1102": "right_arm", "1103": "left_ee", "1104": "right_ee", "1100": "robot_unknown"},
+  "boundary": "The mounting flange itself belongs to arm. Everything on the tool side of the flange, including gripper housing and fingers, belongs to EE.",
+  "laterality": "Physical robot left/right, not sorted image coordinates. Initial head mapping verified against left/right joint motion in episodes 001603 and 001684. Track identity persists across image crossings.",
+  "uncertainty": "Invisible flange, failed geometric seed registration and conflicting part masks are uncertain, not accepted anatomical GT. Unresolved regions remain robot_unknown.",
+  "object_policy": "Robot masks are an independent layer. Never subtract robot regions from task-object masks.",
+  "reference_episode": "episode_001684",
+  "head": [
+    {"part_ids": [1101, 1103], "side": "left", "points": [[62, 655], [125, 675], [58, 444], [280, 443], [125, 550]], "labels": [1, 1, 1, 1, 1], "box": [0, 345, 329, 720], "flange_boundary": [[73, 606], [179, 640]], "arm_point": [92, 685]},
+    {"part_ids": [1102, 1104], "side": "right", "points": [[1081, 669], [1140, 699], [911, 451], [1101, 443], [1057, 551]], "labels": [1, 1, 1, 1, 1], "box": [866, 351, 1236, 720], "flange_boundary": [[991, 645], [1108, 607]], "arm_point": [1100, 693]},
+    {"part_ids": [1103], "side": "left", "image": "annotations/robot_parts_contract_probe_task24_20260917/episode_002478_head_000000.png", "points": [[241, 527], [433, 530], [306, 634], [293, 701]], "labels": [1, 1, 1, 1], "box": [182, 450, 471, 720], "boundary_status": "flange_outside_image; only visible EE is seeded"},
+    {"part_ids": [1104], "side": "right", "image": "annotations/robot_parts_contract_probe_task24_20260917/episode_002478_head_000000.png", "points": [[863, 528], [1048, 531], [984, 631], [1002, 706]], "labels": [1, 1, 1, 1], "box": [815, 454, 1132, 720], "boundary_status": "flange_outside_image; only visible EE is seeded"}
+  ],
+  "left_wrist": [{"part_ids": [1103], "side": "left", "points": [[91, 339], [177, 313], [490, 313], [575, 342]], "labels": [1, 1, 1, 1], "box": [0, 267, 640, 360]}],
+  "right_wrist": [{"part_ids": [1104], "side": "right", "points": [[82, 336], [177, 314], [497, 314], [568, 342]], "labels": [1, 1, 1, 1], "box": [0, 267, 640, 360]}],
+  "seed_provenance": "Assistant RGB-reviewed seed points; approximate visible mounting-interface polyline, not human-confirmed engineering calibration. A 4px boundary band remains uncertain. Never infer an occluded flange."
+}

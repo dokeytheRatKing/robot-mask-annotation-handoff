@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>物体 mask 审核</title>
+<style>
+body{font:15px system-ui;background:#182028;color:#eee;margin:16px}button,select,input{font:inherit;margin:4px}button{cursor:pointer}button:disabled{cursor:wait;opacity:.5}canvas{display:block;width:min(100%,1280px);height:auto;touch-action:none;cursor:crosshair;border:1px solid #65727e}#notice{color:#ffd180;min-height:24px}label{white-space:nowrap}a{color:#8cf}.muted{color:#b9c6d1;font-size:13px}.toolbar{display:flex;align-items:center;flex-wrap:wrap;gap:4px;margin:8px 0}#legend{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}.object-card{border:1px solid #5b6873;border-radius:6px;padding:5px 8px;display:flex;align-items:center;gap:5px}.object-card.active{outline:2px solid var(--color)}.object-card button{background:transparent;color:inherit;border:0}.dot{background:var(--color);display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:6px}.badge{font-size:12px;color:#c8d3dc}.pending{color:#ffd180}#status{font-size:13px}#notes{width:min(90vw,500px)}#frame{font-size:13px;color:#bdcbd5}
+*{box-sizing:border-box}#conditions{display:flex;flex-wrap:wrap;gap:4px 8px}#frame,#notice{overflow-wrap:anywhere}.toolbar>*{max-width:100%}
+</style>
+<h2>物体 mask / 可见性 / 身份审核</h2>
+<p>默认叠加显示所有物体的 mask。点击彩色物体卡片选择并修改；待复核结果需核对像素、可见性和身份后保存。</p>
+<div class="toolbar"><button id="prev">上一帧</button><button id="next">下一帧</button><input id="index" aria-label="图片序号" type="number" min="1" value="1" style="width:75px"><button id="jump">跳转</button><button id="pending">下一个待复核物体</button><span id="status"></span></div>
+<div class="toolbar"><select id="object" aria-label="当前编辑物体"></select><label>实例 ID（必填）<input id="identity" size="18" required maxlength="159"></label><label>标注者（必填）<input id="annotator" size="14" required placeholder="姓名或代号"></label>
+<select id="visibility" required aria-label="visibility（必选）"><option value="">选择 visibility（必选）</option><option value="visible">可见</option><option value="partial_occlusion">部分遮挡</option><option value="fully_occluded">完全遮挡</option><option value="out_of_view">完全出画</option><option value="unknown">无法确定（不计入质量分数）</option></select></div>
+<div id="legend" aria-label="物体颜色和审核状态"></div>
+<div class="toolbar"><select id="tool" aria-label="绘制工具"><option value="polygon">多边形添加</option><option value="brush">画笔添加</option><option value="erase">橡皮擦</option></select><button id="polygon">闭合多边形</button><label>笔宽 <input id="radius" type="number" value="12" min="1" max="150" style="width:60px"></label><button id="clear">清空当前 mask</button><button id="undo">撤销</button><label><input id="show" type="checkbox" checked>显示 mask</label><label><input id="all" type="checkbox" checked>显示所有物体</label><label>透明度 <input id="opacity" type="range" min="10" max="85" value="45"></label></div>
+<canvas id="view"></canvas><p id="frame"></p><div id="conditions"></div>
+<p class="muted">只画当前物体真实可见的像素，不补全遮挡部分，不画夹爪。绘制、闭合或修改标注后，需要重新勾选人工确认。</p>
+<div class="toolbar"><input id="notes" placeholder="备注 / 身份不确定原因"><label><input type="checkbox" id="confirm">我已人工核对像素、可见性和身份</label><button id="save">确认并保存当前物体</button></div><p id="notice" role="status" aria-live="polite"></p>
+<script>
+'use strict';
+const $=id=>document.getElementById(id),v=$('view'),ctx=v.getContext('2d'),mc=document.createElement('canvas'),m=mc.getContext('2d');
+const colors={1:'#2dd2ff',2:'#ffdc23',4:'#ff8c2d',10:'#eb5fdc',20:'#f04150',21:'#41eb7d'};
+const names={1:'水壶',2:'香蕉',4:'篮子',10:'桃子',20:'西瓜片',21:'牛油果'};
+const visibilityNames={visible:'可见',partial_occlusion:'部分遮挡',fully_occluded:'完全遮挡',out_of_view:'完全出画',unknown:'无法确定'};
+const conditionNames={normal_unoccluded:'正常无遮挡',grasp_contact:'抓取接触',partial_occlusion:'部分遮挡',out_of_view:'完全出画',reentry:'重新入画',similar_objects_near:'相似物体靠近',wrist_closeup:'腕部近景'};
+let manifest,pos=0,img=new Image(),points=[],history=[],drawing=false,last=null,dirty=false,loading=true,saving=false,activeObject=null,frameReady=false;
+let frameRows=new Map(),layers=new Map(),hidden=new Set(),completed=new Set();
+function sample(){return manifest.samples[pos]}
+function oid(){return Number($('object').value)}
+function notice(text){$('notice').textContent=text}
+function color(id){return colors[id]||'#ffffff'}
+function changed(){dirty=true;$('confirm').checked=false}
+function backup(){history.push(m.getImageData(0,0,mc.width,mc.height));if(history.length>20)history.shift();changed()}
+function lock(){const navigation=new Set(['prev','next','index','jump','pending']);for(const el of document.querySelectorAll('button,select,input'))el.disabled=loading||saving||!manifest||(!frameReady&&!navigation.has(el.id))}
+function paintRLE(canvas,rle,id){
+ canvas.width=sample().image_width;canvas.height=sample().image_height;
+ const context=canvas.getContext('2d'),data=context.createImageData(canvas.width,canvas.height);
+ const rgb=color(id).slice(1).match(/../g).map(x=>parseInt(x,16));
+ let counts=[],p=0;while(p<rle.counts.length){let x=0,k=0,c;do{c=rle.counts.charCodeAt(p++)-48;x|=(c&31)<<(5*k);k++}while(c&32);if(c&16)x|=-1<<(5*k);if(counts.length>2)x+=counts[counts.length-2];counts.push(x)}
+ let off=0,on=false;for(const count of counts){if(on)for(let n=off;n<off+count;n++){const x=Math.floor(n/canvas.height),y=n%canvas.height,q=(y*canvas.width+x)*4;data.data[q]=rgb[0];data.data[q+1]=rgb[1];data.data[q+2]=rgb[2];data.data[q+3]=255}off+=count;on=!on}
+ context.putImageData(data,0,0);
+}
+function render(){
+ if(!img.complete||!img.naturalWidth)return;
+ ctx.clearRect(0,0,v.width,v.height);ctx.drawImage(img,0,0);
+ if($('show').checked){ctx.globalAlpha=Number($('opacity').value)/100;
+  if($('all').checked)for(const [id,canvas] of layers)if(id!==activeObject&&!hidden.has(id))ctx.drawImage(canvas,0,0);
+  if(!hidden.has(activeObject))ctx.drawImage(mc,0,0);ctx.globalAlpha=1;
+ }
+ if(points.length){ctx.beginPath();points.forEach(([x,y],i)=>i?ctx.lineTo(x,y):ctx.moveTo(x,y));ctx.strokeStyle=color(activeObject);ctx.lineWidth=2;ctx.stroke();for(const [x,y] of points){ctx.fillStyle='#fff';ctx.fillRect(x-2,y-2,4,4)}}
+}
+function legend(){
+ $('legend').replaceChildren();
+ for(const o of sample().objects){
+  const row=frameRows.get(o.object_id),card=document.createElement('div');card.className='object-card'+(o.object_id===activeObject?' active':'');card.style.setProperty('--color',color(o.object_id));
+  const show=document.createElement('input');show.type='checkbox';show.checked=!hidden.has(o.object_id);show.setAttribute('aria-label','显示'+names[o.object_id]);show.onchange=()=>{show.checked?hidden.delete(o.object_id):hidden.add(o.object_id);render()};
+  const button=document.createElement('button'),dot=document.createElement('span');dot.className='dot';button.append(dot,document.createTextNode(names[o.object_id]||o.class_name));button.onclick=()=>selectObject(o.object_id);
+  const badge=document.createElement('span');badge.className='badge'+(row?.label_source==='human'?'':' pending');badge.textContent=row?(row.label_source==='human'?'已确认':'待复核')+' · '+visibilityNames[row.visibility]:'未标注';
+  card.append(show,button,badge);$('legend').append(card);
+ }
+}
+function loadLabel(){
+ m.clearRect(0,0,mc.width,mc.height);points=[];history=[];dirty=false;drawing=false;$('confirm').checked=false;$('visibility').value='';$('notes').value='';
+ const object=sample().objects.find(o=>o.object_id===activeObject);$('identity').value=object.class_name.replaceAll(' ','_')+'_1';
+ document.querySelectorAll('#conditions input').forEach(x=>x.checked=false);
+ const row=frameRows.get(activeObject);
+ if(row){$('visibility').value=row.visibility;$('identity').value=row.instance_id;$('notes').value=row.notes||'';document.querySelectorAll('#conditions input').forEach(x=>x.checked=row.conditions.includes(x.value));m.drawImage(layers.get(activeObject),0,0);notice(row.label_source==='human'?'已载入人工标注 · revision '+row.revision:'已载入待复核结果，请检查后确认保存。')}
+ else notice('此物体尚未标注。');
+ legend();render();
+}
+async function readJSON(url,options){const r=await fetch(url,options);let result;try{result=await r.json()}catch{throw Error('服务响应异常，请确认已重新启动新版标注服务。')}if(!r.ok)throw Error(result.error||'请求失败（HTTP '+r.status+'）');return result}
+async function load(){
+ loading=true;frameReady=false;drawing=false;lock();try{
+  const s=sample();$('index').value=pos+1;$('index').max=manifest.samples.length;
+  $('frame').textContent=`第 ${pos+1} / ${manifest.samples.length} 张 · ${s.episode_id} / ${s.camera} / frame ${s.frame_idx} / clip ${s.clip_id}`;
+  $('object').replaceChildren();for(const o of s.objects){const e=document.createElement('option');e.value=o.object_id;e.textContent=`${names[o.object_id]||o.class_name} (${o.object_id})`;$('object').append(e)}
+  if(!s.objects.some(o=>o.object_id===activeObject))activeObject=s.objects[0].object_id;$('object').value=activeObject;
+  const nextImage=new Image();const [rows]=await Promise.all([readJSON('/labels?id='+s.sample_id),new Promise((resolve,reject)=>{nextImage.onload=resolve;nextImage.onerror=()=>reject(Error('图片加载失败'));nextImage.src='/image?id='+s.sample_id})]);
+  img=nextImage;v.width=mc.width=s.image_width;v.height=mc.height=s.image_height;frameRows=new Map();layers=new Map();
+  // Paint the basket first so the remaining objects stay distinguishable.
+  for(const row of rows.sort((a,b)=>(a.object_id===4?-1:0)-(b.object_id===4?-1:0))){frameRows.set(row.object_id,row);const canvas=document.createElement('canvas');paintRLE(canvas,row.mask,row.object_id);layers.set(row.object_id,canvas)}
+  frameReady=true;loadLabel();historyURL();
+ }catch(e){ctx.clearRect(0,0,v.width,v.height);points=[];frameRows.clear();layers.clear();$('legend').replaceChildren();notice(e.message+'；请重新跳转加载此帧。')}finally{loading=false;lock()}
+}
+function historyURL(){window.history.replaceState(null,'',`#frame=${pos+1}&object=${activeObject}`)}
+function canLeave(){return !loading&&!saving&&(!dirty||window.confirm('当前修改尚未保存，确定离开？'))}
+async function move(n){if(!Number.isInteger(n)||!canLeave())return;pos=Math.max(0,Math.min(manifest.samples.length-1,n));await load()}
+function selectObject(id){if(id===activeObject)return;if(!canLeave()){$('object').value=activeObject;return}activeObject=id;$('object').value=id;loadLabel();historyURL()}
+$('prev').onclick=()=>move(pos-1);$('next').onclick=()=>move(pos+1);$('jump').onclick=()=>move(Number($('index').value)-1);$('object').onchange=()=>selectObject(oid());
+$('pending').onclick=async()=>{if(!canLeave())return;try{await status();const list=manifest.samples.flatMap((s,i)=>s.objects.map(o=>({i,id:o.object_id,key:s.sample_id+':'+o.object_id})));const current=list.findIndex(r=>r.i===pos&&r.id===activeObject);for(let step=1;step<=list.length;step++){const r=list[(current+step)%list.length];if(!completed.has(r.key)){pos=r.i;activeObject=r.id;await load();return}}notice('所有物体均已人工确认。')}catch(e){notice(e.message)}};
+function coord(e){const r=v.getBoundingClientRect();return[(e.clientX-r.left)*v.width/r.width,(e.clientY-r.top)*v.height/r.height]}
+function stroke(a,b){m.globalCompositeOperation=$('tool').value==='erase'?'destination-out':'source-over';m.strokeStyle=color(activeObject);m.lineWidth=Math.max(1,Number($('radius').value)||12);m.lineCap='round';m.beginPath();m.moveTo(...a);m.lineTo(...b);m.stroke();m.globalCompositeOperation='source-over';render()}
+v.onpointerdown=e=>{if(loading||saving||!frameReady)return;v.setPointerCapture(e.pointerId);hidden.delete(activeObject);const xy=coord(e);if($('tool').value==='polygon'){points.push(xy);changed();render()}else{backup();drawing=true;last=xy;stroke(xy,[xy[0]+.01,xy[1]])}};
+v.onpointermove=e=>{if(drawing){const xy=coord(e);stroke(last,xy);last=xy}};v.onpointerup=()=>drawing=false;v.onpointercancel=()=>drawing=false;
+$('polygon').onclick=()=>{if(points.length<3){notice(points.length?'至少点击三个顶点，再闭合多边形。':'当前没有待闭合的多边形。');return}backup();m.beginPath();points.forEach(([x,y],i)=>i?m.lineTo(x,y):m.moveTo(x,y));m.closePath();m.fillStyle=color(activeObject);m.fill();points=[];render();notice('多边形已闭合，尚未保存。请完成标注信息，重新勾选人工确认，再保存。')};
+$('clear').onclick=()=>{backup();m.clearRect(0,0,mc.width,mc.height);points=[];render()};
+$('undo').onclick=()=>{if(points.length){points.pop();changed();render();return}if(history.length){m.putImageData(history.pop(),0,0);changed();render()}};
+for(const id of ['show','all'])$(id).onchange=render;$('opacity').oninput=render;
+for(const id of ['visibility','identity','notes','annotator'])$(id).oninput=changed;
+try{$('annotator').value=localStorage.getItem('mask-audit-annotator')||''}catch{}
+function invalid(id,message){$(id).focus();throw Error(message)}
+$('save').onclick=async()=>{
+ if(loading||saving||!frameReady)return;
+ try{
+  if(points.length)throw Error('多边形尚未闭合，请先点击“闭合多边形”。');
+  const annotator=$('annotator').value.trim(),instance=$('identity').value.trim(),visibility=$('visibility').value;
+  if(!annotator)invalid('annotator','请填写页面上方的“标注者”（姓名或代号），再保存。');
+  if(!instance||instance.length>=160)invalid('identity','实例 ID 必须填写，且不能超过 159 个字符。');
+  if(!visibility)invalid('visibility','请选择 visibility。');
+  const pixels=m.getImageData(0,0,mc.width,mc.height).data,counts=[];let previous=false,run=0,area=0;
+  for(let x=0;x<mc.width;x++)for(let y=0;y<mc.height;y++){const on=pixels[(y*mc.width+x)*4+3]>127;if(on)area++;if(on===previous)run++;else{counts.push(run);run=1;previous=on}}counts.push(run);
+  const visible=['visible','partial_occlusion'].includes(visibility);
+  if(visible&&!area)throw Error('当前选择了可见或部分遮挡，请先画出物体可见部分的 mask。');
+  if(!visible&&area)invalid('visibility','当前 mask 非空。若物体可见，请改为可见或部分遮挡；若确实不可见或无法确定，请先清空 mask。');
+  if(!$('confirm').checked)invalid('confirm','请勾选人工确认。绘制、闭合多边形或修改标注后，需要重新确认。');
+  const body={sample_id:sample().sample_id,object_id:activeObject,instance_id:instance,annotator,visibility,conditions:[...document.querySelectorAll('#conditions input:checked')].map(x=>x.value),mask_rle_counts:counts,human_confirmed:true,notes:$('notes').value};
+  saving=true;lock();let result;
+  try{result=await readJSON('/save',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)})}catch(e){throw Error(e instanceof TypeError?'无法连接本地标注服务，请检查启动程序的终端是否仍在运行。':e.message)}
+  dirty=false;const previousRow=frameRows.get(activeObject)||{};frameRows.set(activeObject,{...previousRow,...body,label_source:'human',revision:result.revision});
+  const canvas=document.createElement('canvas');canvas.width=mc.width;canvas.height=mc.height;canvas.getContext('2d').drawImage(mc,0,0);layers.set(activeObject,canvas);legend();render();notice('已保存 revision '+result.revision);
+  try{localStorage.setItem('mask-audit-annotator',annotator)}catch{}
+  try{await status()}catch{notice('已保存 revision '+result.revision+'；进度刷新失败，标签已保存。')}
+ }catch(e){notice(e.message)}finally{saving=false;lock()}
+};
+async function status(){const s=await readJSON('/status');completed=new Set(s.completed);$('status').textContent=`${s.frames} 张 · 已人工确认 ${s.labels}/${s.required_labels} · 待复核 ${s.proposals||0}`}
+window.onbeforeunload=e=>{if(dirty||saving){e.preventDefault();e.returnValue=''}};
+(async()=>{
+ manifest=await readJSON('/manifest');const hash=new URLSearchParams(location.hash.slice(1)),requested=Number(hash.get('frame'));if(Number.isInteger(requested)&&requested>=1&&requested<=manifest.samples.length)pos=requested-1;activeObject=Number(hash.get('object'))||null;
+ for(const c of manifest.required_conditions){const label=document.createElement('label'),box=document.createElement('input');box.type='checkbox';box.value=c;box.onchange=changed;label.title=c;label.append(box,document.createTextNode(conditionNames[c]+' '));$('conditions').append(label)}
+ await load();await status();
+})().catch(e=>{loading=false;lock();notice(e.message)});
+</script>
+</html>
