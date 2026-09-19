@@ -1422,6 +1422,13 @@
       "source_sha256": "a3fe105e9cec078cc195dedf5e4ed84678e13984574df8da4e9d62e5d699a687",
       "exported_sha256": "a3fe105e9cec078cc195dedf5e4ed84678e13984574df8da4e9d62e5d699a687",
       "transformation": "redact Mac home prefix; preserve historical prompts and confirmation scope"
+    },
+    {
+      "source": "incoming/mask_audit_returns/local_complete_20260916/astribot_smoke_test_full_project_20260916/tools/test_review_ui.mjs",
+      "target": "legacy/mac_smoke_20260916/tools/test_review_ui.mjs",
+      "source_sha256": "63aab7042190d6108ff589a7038d01df1fa14378b62bcf751b9bbbc99f90acbe",
+      "exported_sha256": "63aab7042190d6108ff589a7038d01df1fa14378b62bcf751b9bbbc99f90acbe",
+      "transformation": "redact Mac home prefix; original browser regression script"
     }
   ],
   "raw_data_included": false,
